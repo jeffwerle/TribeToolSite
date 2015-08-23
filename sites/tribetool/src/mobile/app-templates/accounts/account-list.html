@@ -1,0 +1,31 @@
+<ion-modal-view ng-controller="accountListController">
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Votes</h1>
+        <div class="button button-clear" ng-click="cancel()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+
+        <ion-list>
+            <div class="list">
+                <a emotion-color="account.emotionVote.EmotionType" class="item pointer item-thumbnail-left" ng-repeat="account in accounts" ng-click="goToAccount(account)">
+                    <img ng-src="{{account | profilePictureUrl | trusted}}">
+                    <h2><profile-name account="account"></profile-name></h2>
+                    <p><div class="emotion-icon-no-hover emotion-{{account.emotionTypeLowerCase}} emotion-sprite-small-{{account.emotionTypeLowerCase}}"></div> <div ng-if="account.emotionVote.DateVoted">Voted {{account.emotionVote.DateVoted | dateRobust}}</div></p>
+
+                </a>
+            </div>
+        </ion-list>
+
+        <ion-infinite-scroll ng-if="!scrollingDone" on-infinite="getMoreItems()" icon="ion-loading-c" distance="10%">
+        </ion-infinite-scroll>
+
+
+        <div ng-show="processing || processingFriendRequests">
+            <loading></loading> Retrieving Accounts...
+        </div>
+
+
+
+
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,62 @@
+cd /d H:\documents\WebStorm Projects\TribeTool\server
+node app.js
+
+cd /d H:\documents\WebStorm Projects\TribeTool\sites\tribetool
+grunt dev
+
+
+cd /d H:\documents\WebStorm Projects\TribeTool\sites\tribetool
+grunt devMobile
+ionic serve
+
+ionic emulate android
+
+Mobile App:
+
+
+So for the mobile app, here's what's going on:
+To publish the app you'll run this command:
+    cordova build --release android
+    cordova build --release ios
+
+The files from which cordova will pull to create the app are located in
+/platforms/android/assets/www
+and
+/platforms/ios/www
+respectively.
+
+So essentially we need to get our final files into this directory.
+Ionic will serve files from the root /www path of the project and will also use
+this root /www path for emulation.
+
+The theory, then, is that we want to keep our dev files in something like "src/mobile"
+We will then use grunt to copy/minify/uglify (or not, as necessary) the files in "src/mobile" into
+"/www".
+After the files are in "/www", we can run "ionic build android" and "ionic build ios" to update
+/platforms/android/assets/www and /platforms/ios/www, respectively.
+
+
+
+
+
+cd /d H:\documents\WebStorm Projects\TribeTool\sites\tribetool
+cd Users/rosshartmann/Documents/WebStormProjects/TribeTool/sites/tribetool
+
+grunt devMobile
+grunt productionMobile
+
+To debug in browser:
+ionic serve
+
+To debug in simulator:
+ionic emulate android
+ionic emulate ios
+
+
+To release:
+ionic build android
+ionic build ios
+then
+cordova build --release android
+cordova build --release ios
+

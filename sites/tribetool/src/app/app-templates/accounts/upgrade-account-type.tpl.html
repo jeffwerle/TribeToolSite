@@ -1,0 +1,166 @@
+<div>
+    <div class="col-md-offset-1 col-md-10">
+        <div class="text-center">
+            <h1>Account Types</h1>
+        </div>
+
+
+        <div ng-show="showStandard" class="col-md-4">
+            <div class="pricing-container">
+                <div class="pricing-header">
+                    Standard
+                </div>
+                <div class="pricing-price">
+                    <span>
+                      Free
+                    </span>
+                </div>
+                <div class="pricing-itemsWrapper">
+                    <ul class="pricing-items">
+                        <li class="pricing-item">Chord Chart Generator</li>
+                        <li class="pricing-item">Scale Search</li>
+                        <li class="pricing-item">Harmonizer</li>
+                        <li class="pricing-item">Chord and Scale Dictionary</li>
+                        <li class="pricing-item">Instrument Customization</li>
+                    </ul>
+                    <div class="text-center" style="margin-bottom: 20px;">
+                        <div>
+                            <a ng-click="selectAccountType('Standard')"><button type="button" class="btn btn-primary">Select</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" ng-class="{'col-md-offset-2': !showStandard}">
+            <div class="pricing-container">
+                <div class="pricing-header">
+                    Professional
+                </div>
+                <div class="pricing-price">
+                    <span>
+                      <sup class="pricing-currency">$</sup><span class="pricing-figure">12</span> <sup class="pricing-frequency"> / month</sup>
+                    </span>
+                </div>
+                <div class="pricing-itemsWrapper">
+                    <ul class="pricing-items">
+                        <li class="pricing-item">10-Day Free Trial (Cancel at any time)</li>
+                        <li class="pricing-item">Chord Chart Generator</li>
+                        <li class="pricing-item">Scale Search</li>
+                        <li class="pricing-item">Harmonizer</li>
+                        <li class="pricing-item">Chord and Scale Dictionary</li>
+                        <li class="pricing-item">Instrument Customization</li>
+                        <li class="pricing-item">Interactive <b>Lyric</b> Editor</li>
+                        <li class="pricing-item"><b>Chord Progression</b> Generator</li>
+                    </ul>
+                    <div class="text-center" style="margin-bottom: 20px;">
+                        <div>
+                            <a ng-click="selectAccountType('Professional')"><button type="button" class="btn btn-primary">Select</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="pricing-container">
+                <div class="pricing-header">
+                    Mentor
+                </div>
+                <div class="pricing-price">
+                    <span>
+                      <sup class="pricing-currency">$</sup><span class="pricing-figure">34</span> <sup class="pricing-frequency"> / month</sup>
+                    </span>
+                </div>
+                <div class="pricing-itemsWrapper">
+                    <ul class="pricing-items">
+                        <li class="pricing-item">10-Day Free Trial (Cancel at any time)</li>
+                        <li class="pricing-item">Chord Chart Generator</li>
+                        <li class="pricing-item">Scale Search</li>
+                        <li class="pricing-item">Harmonizer</li>
+                        <li class="pricing-item">Chord and Scale Dictionary</li>
+                        <li class="pricing-item">Instrument Customization</li>
+                        <li class="pricing-item">Interactive <b>Lyric</b> Editor</li>
+                        <li class="pricing-item"><b>Chord Progression</b> Generator</li>
+                        <li class="pricing-item">30 minutes of <b>Songwriting Mentoring</b> per month</li>
+                    </ul>
+                    <div class="text-center" style="margin-bottom: 20px;">
+                        <div>
+                            <a ng-click="selectAccountType('Ultimate')"><button type="button" class="btn btn-primary">Select</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="clear:both;"></div>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Name</div>
+                <div class="panel-body">
+
+                    <form name="stripeForm" ng-submit="checkout()">
+
+                        <div class="form-group" ng-class="{'has-error': stripeForm.card.$invalid}">
+                            <label>Card Number <span class="required-star">*</span></label>
+                            <input type="text" size="20" payments-validate="card" payments-type-model="type" required="true" placeholder="Card Number" class="form-control" name="card" ng-model="cardNumber" />
+                        </div>
+
+                        <div class="form-group" ng-class="{'has-error': stripeForm.cvc.$invalid}">
+                            <label>CVC <span class="required-star">*</span></label>
+                            <input id="cvc" type="text" size="4" name="cvc" payments-validate="cvc" required="true" placeholder="CVC" class="form-control" ng-model="cvc"/>
+                        </div>
+
+
+                        <div class="form-group" ng-class="{'has-error': stripeForm.expiry.$invalid}">
+                            <label>Expiration (MM/YYYY)<span class="required-star">*</span></label>
+                            <input name="expiry" type="text" size="7" payments-validate="expiry" required="true" placeholder="MM / YYYY" class="form-control" ng-model="expiry"/>
+                        </div>
+
+                        <label>Expiration (MM/YYYY)<span class="required-star">*</span></label>
+                        <div>
+                            <div class="col-md-3">
+                                <input id="exp-month" type="text" size="2" required="true" placeholder="MM" class="form-control" ng-model="expMonth"/>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="exp-year" type="text" size="4" required="true" placeholder="YYYY" class="form-control" ng-model="expYear"/>
+                            </div>
+                        </div>
+
+
+                        <button style="margin-top: 20px;" type="submit" class="btn btn-primary pull-right">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--
+      Works like Stripe Checkout's simple integration, but calls the
+      function passed to stripe-checkout with the token object instead
+      of submitting a form.
+    -->
+        <button stripe-checkout="doCheckout"
+                data-key="pk_test_bDA0x08CiNWtVBVK9tUVF49p"
+                data-name="Simple Example"
+                data-description="Five dollahs!"
+                data-amount="500">
+            Buy
+        </button>
+
+        <!--
+        <form action="">
+            <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_bDA0x08CiNWtVBVK9tUVF49p"
+                    data-amount="2000"
+                    data-name="Demo Site"
+                    data-description="2 widgets ($20.00)"
+                    data-image="/128x128.png">
+            </script>
+        </form>
+        -->
+    </div>
+</div>

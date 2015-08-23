@@ -1,0 +1,43 @@
+<div style="padding: 10px;">
+    <modal-close-button on-cancel="cancel()"></modal-close-button>
+
+    <div>
+        <perfect-scrollbar id="accountListPerfectScrollbar" class="scroller" style="height: 300px;" suppress-scroll-x="true">
+            <div infinite-scroll-container="perfectScrollbarElement" infinite-scroll="getMoreItems()" infinite-scroll-disabled="scrollingDone || loadingAccounts" infinite-scroll-distance="2">
+
+                <div ng-if="isEmotionVote">
+                    <div ng-repeat="account in accounts">
+                        <div class="well" emotion-color="account.emotionVote.EmotionType" style="padding-top: 0px; padding-bottom: 0px;">
+                            <div style="float: left; margin-right: 20px;">
+                                <comment-picture account="account"></comment-picture>
+                            </div>
+                            <profile-name account="account"></profile-name>
+                            <p><div class="emotion-icon-no-hover emotion-{{account.emotionTypeLowerCase}} emotion-sprite-small-{{account.emotionTypeLowerCase}}"></div> <div ng-if="account.emotionVote.DateVoted">Voted {{account.emotionVote.DateVoted | dateRobust}}</div></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="!isEmotionVote">
+
+                    <div ng-repeat="account in accounts">
+                        <div class="well" style="padding-top: 0px; padding-bottom: 0px;" ng-style="{'border-color': account.vote.VoteType === 'UpVote' ? 'green' : 'red'}">
+                            <div style="float: left; margin-right: 20px;">
+                                <comment-picture account="account"></comment-picture>
+                            </div>
+                            <profile-name account="account"></profile-name>
+                            <p><i class="icon {{account.voteIconClass}} voted" style="cursor:default;"></i> <div ng-if="account.vote.DateVoted">Voted {{account.vote.DateVoted | dateRobust}}</div></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </perfect-scrollbar>
+    </div>
+    <div ng-show="loadingAccounts">
+        <loading></loading> Loading...
+    </div>
+    <button class="btn btn-primary pull-right" style="clear: both; margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" ng-click="cancel()" >Okay</button>
+
+    <div class="clearfix"></div>
+</div>

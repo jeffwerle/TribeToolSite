@@ -1,0 +1,338 @@
+2015-05-31 15:18:50.709 TribeTool[88812:352714] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-31 15:18:50.710 TribeTool[88812:352714] Multi-tasking -> Device: YES, App: YES
+2015-05-31 15:18:50.829 TribeTool[88812:352714] [CDVTimer][keyboard] 0.054002ms
+2015-05-31 15:18:50.844 TribeTool[88812:352714] [CDVTimer][localnotification] 14.334023ms
+2015-05-31 15:18:50.844 TribeTool[88812:352714] [CDVTimer][localnotification] 0.018001ms
+2015-05-31 15:18:51.046 TribeTool[88812:352714] [CDVTimer][socialsharing] 201.698959ms
+2015-05-31 15:18:51.062 TribeTool[88812:352714] [CDVTimer][file] 15.636027ms
+2015-05-31 15:18:51.062 TribeTool[88812:352714] [CDVTimer][TotalPluginStartup] 234.429002ms
+2015-05-31 15:18:51.074 TribeTool[88812:352714] active
+2015-05-31 15:18:51.153 TribeTool[88812:352714] Attempting to badge the application icon but haven't received permission from the user to badge the application
+2015-05-31 15:18:51.257 TribeTool[88812:352714] Resetting plugins due to page load.
+2015-05-31 15:18:51.291 TribeTool[88812:352786] ERROR whitelist rejection: url='https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit'
+2015-05-31 15:18:52.886 TribeTool[88812:352786] ERROR whitelist rejection: url='https://www.youtube.com/iframe_api'
+2015-05-31 15:18:53.332 TribeTool[88812:352714] Finished load of: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/11B3266A-3460-41A9-B115-2D898DC07A85/TribeTool.app/www/index.html#/post/the-mouse-landing/0/favorite-diamond-celebration-show
+2015-05-31 15:18:53.513 TribeTool[88812:352714] Socket Connected
+2015-05-31 15:18:53.609 TribeTool[88812:352714] entering communityViewController
+2015-05-31 15:18:53.843 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:18:54.072 TribeTool[88812:352714] TRIBETOOL: entering communityService.loadCommunityModules
+2015-05-31 15:18:54.072 TribeTool[88812:352714] TRIBETOOL: entering communityService.onCommunityModulesLoaded()
+2015-05-31 15:18:54.096 TribeTool[88812:352714] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:18:54.096 TribeTool[88812:352714] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:18:56.469 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:18:56.478 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/2bd63035-7d6a-43a2-91e0-d5f7a6aa5898'
+2015-05-31 15:18:56.619 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/a5f4e042-6b3c-47d5-8daf-f66681b681fe'
+2015-05-31 15:18:56.623 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7e131ff2-ad39-441a-b4c5-5c3e0ff491dc'
+2015-05-31 15:18:56.626 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9adcfd-6021-4755-a2e8-3f3b533e310f'
+2015-05-31 15:18:56.678 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/487b599f-34a7-4450-8c4a-325184e654f4'
+2015-05-31 15:18:56.682 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:18:56.685 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/2bd63035-7d6a-43a2-91e0-d5f7a6aa5898'
+2015-05-31 15:18:56.814 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/d27f3640-0160-420b-a391-5d071d8c8b32'
+2015-05-31 15:18:56.816 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/3d599036-d223-40e4-96d1-548322d183d0'
+2015-05-31 15:19:01.631 TribeTool[88812:352714] entering communityViewController
+2015-05-31 15:19:01.631 TribeTool[88812:352714] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:19:02.593 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:19:02.663 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:19:02.670 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/af1966c1-97b3-4396-946e-e902dda20977'
+2015-05-31 15:19:02.671 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9216f8-bd7c-461d-a9c2-0db97d682afd'
+2015-05-31 15:19:02.673 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/82427664-9b88-4309-8c5b-93e534f5bf80'
+2015-05-31 15:19:18.265 TribeTool[88812:352714] Recache request received. Recaching...
+2015-05-31 15:19:22.221 TribeTool[88812:352714] active
+2015-05-31 15:19:22.221 TribeTool[88812:352714] Attempting to badge the application icon but haven't received permission from the user to badge the application
+2015-05-31 15:20:53.687 TribeTool[88812:352714] TRIBETOOL: entering $socket.on(notification)
+2015-05-31 15:20:53.687 TribeTool[88812:352714] TRIBETOOL: entering $socket.on(notification) in headerService
+2015-05-31 15:20:53.865 TribeTool[88812:352714] Recache request received. Recaching...
+2015-05-31 15:20:58.432 TribeTool[88812:352714] active
+2015-05-31 15:21:01.077 TribeTool[88812:352714] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:21:01.158 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:21:01.247 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/af1966c1-97b3-4396-946e-e902dda20977'
+2015-05-31 15:21:01.248 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9216f8-bd7c-461d-a9c2-0db97d682afd'
+2015-05-31 15:21:01.249 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/82427664-9b88-4309-8c5b-93e534f5bf80'
+2015-05-31 15:21:02.282 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:21:02.356 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:21:02.364 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/af1966c1-97b3-4396-946e-e902dda20977'
+2015-05-31 15:21:02.366 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9216f8-bd7c-461d-a9c2-0db97d682afd'
+2015-05-31 15:21:02.367 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/82427664-9b88-4309-8c5b-93e534f5bf80'
+2015-05-31 15:21:13.639 TribeTool[88812:352714] active
+2015-05-31 15:23:01.138 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/44b11446-b8df-45f8-a59c-6d32eb72ca0a'
+2015-05-31 15:23:01.139 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/79bf07c2-98a5-4807-b37d-0a1d4e3526f5'
+2015-05-31 15:23:01.140 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/a6bfc3d8-db25-4359-9ae2-d3a01c13bfc7'
+2015-05-31 15:23:01.140 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1c8f0481-9271-4d55-b9b9-a3911d6bb286'
+2015-05-31 15:23:01.141 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/3c949521-f805-4550-856b-83b5e0cb0fb1'
+2015-05-31 15:23:01.144 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/34742a16-80ba-4a11-a66b-101f5fb9dac1'
+2015-05-31 15:23:01.147 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/b1ecc182-b4a7-4901-9bbe-2e7ac42c363f'
+2015-05-31 15:23:01.148 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/b78f7a96-43fe-479f-841b-1d3aab76aa2c'
+2015-05-31 15:23:01.149 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/73c4aa10-4cc1-4252-9ede-8f726ce5dc23'
+2015-05-31 15:23:01.150 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/739f7223-721b-4251-8aff-9ee9779f740e'
+2015-05-31 15:23:01.153 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/c023ea8b-19b4-40e9-9e7e-c53c9c57ff8c'
+2015-05-31 15:23:01.153 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/a6a60796-b9a4-449e-a32e-345ae1c7fe11'
+2015-05-31 15:23:01.154 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/9374c6d0-6499-4657-ad8a-33a3f9cea681'
+2015-05-31 15:23:01.155 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/97126749-9bb2-493f-aafb-57f8cf794baf'
+2015-05-31 15:23:01.155 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/f572c13b-5ebc-4017-b237-81fdd3f74490'
+2015-05-31 15:23:01.156 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/d771817d-ab49-4830-9dcd-b5da19f5717f'
+2015-05-31 15:23:01.157 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/b90569de-bf9e-4263-8b40-22804fb49067'
+2015-05-31 15:23:01.161 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/78e3d487-bb68-40df-9a56-88b69f991889'
+2015-05-31 15:23:01.162 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/9edf09f5-c9bf-42b6-93d5-8934b21e563a'
+2015-05-31 15:23:01.162 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/cfc6e011-1cba-40b9-860e-5e67e4abcdfc'
+2015-05-31 15:23:01.163 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/d7210292-275f-49c1-a9d4-8dd624294d5d'
+2015-05-31 15:23:01.164 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/028102ed-7eb5-43c2-b480-21c0f78c4714'
+2015-05-31 15:23:01.164 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/4df22aae-df73-4fc8-9156-b8d619789cf5'
+2015-05-31 15:23:01.165 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/61844122-b524-47f3-9474-a8de68b0759a'
+2015-05-31 15:23:01.167 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/66a9a4be-d203-4115-8142-3b61cc1235c7'
+2015-05-31 15:23:01.168 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/28deee41-5d33-4100-b336-183ff3975728'
+2015-05-31 15:23:01.169 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/97698847-1fd8-4b88-84e2-b225a6c52c2b'
+2015-05-31 15:23:01.170 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/218ce56f-bfbb-4a53-95fe-949fa7f38cda'
+2015-05-31 15:23:01.170 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/820bafcf-0db0-4c35-b8ea-0867f5c602c2'
+2015-05-31 15:23:01.171 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/6f5d9d01-3eec-4eba-bb2e-01e27316af83'
+2015-05-31 15:23:01.176 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/e5164c3d-96a2-448c-82a1-46003e36dc77'
+2015-05-31 15:23:01.177 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/26805309-ccd8-4d47-ab09-5a5adfbe3973'
+2015-05-31 15:23:01.178 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/60fac4cf-8b09-4d64-9978-b4b6f0733252'
+2015-05-31 15:23:01.179 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/1b0a2c4d-b250-4454-83e5-93d14c991072'
+2015-05-31 15:23:01.179 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/86b0eb4e-3981-4c41-a927-2b2aef58c19f'
+2015-05-31 15:23:01.180 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/b1369e13-4556-4b3f-8034-dd538fc2d96b'
+2015-05-31 15:23:01.181 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/b0e48a80-3426-4f73-ae58-0c4067b493e3'
+2015-05-31 15:23:01.184 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/af1966c1-97b3-4396-946e-e902dda20977'
+2015-05-31 15:23:01.185 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9216f8-bd7c-461d-a9c2-0db97d682afd'
+2015-05-31 15:23:01.186 TribeTool[88812:352786] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/82427664-9b88-4309-8c5b-93e534f5bf80'
+2015-05-31 15:23:04.632 TribeTool[88812:352714] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/af1966c1-97b3-4396-946e-e902dda20977'
+2015-05-31 15:23:04.633 TribeTool[88812:352714] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/7a9216f8-bd7c-461d-a9c2-0db97d682afd'
+2015-05-31 15:23:04.633 TribeTool[88812:352714] ERROR whitelist rejection: url='https://s3.amazonaws.com/image.tribetool.com/82427664-9b88-4309-8c5b-93e534f5bf80'
+2015-05-31 15:23:08.804 TribeTool[88812:352714] active
+2015-05-31 15:23:27.380 TribeTool[88812:352714] THREAD WARNING: ['Camera'] took '34.263672' ms. Plugin should use a background thread.
+2015-05-31 15:23:36.155 TribeTool[88812:352714] THREAD WARNING: ['SocialSharing'] took '63.467041' ms. Plugin should use a background thread.
+2015-05-31 15:23:47.925 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:50.908 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:52.652 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:53.142 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:53.740 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:54.124 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:23:54.550 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:10.373 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:10.771 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:14.473 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:14.810 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:15.001 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:15.379 TribeTool[88812:352714] ERROR whitelist rejection: url='http://time.com/3901243/disney-surge-pricing/'
+2015-05-31 15:24:18.221 TribeTool[88812:352714] Recache request received. Recaching...
+2015-05-31 15:28:27.734 TribeTool[94348:362534] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-31 15:28:27.752 TribeTool[94348:362534] Multi-tasking -> Device: YES, App: YES
+2015-05-31 15:28:27.774 TribeTool[94348:362534] Unlimited access to network resources
+2015-05-31 15:28:27.926 TribeTool[94348:362534] [CDVTimer][keyboard] 0.055969ms
+2015-05-31 15:28:27.926 TribeTool[94348:362534] [CDVTimer][localnotification] 0.047982ms
+2015-05-31 15:28:27.926 TribeTool[94348:362534] [CDVTimer][localnotification] 0.005007ms
+2015-05-31 15:28:28.014 TribeTool[94348:362534] [CDVTimer][socialsharing] 88.346004ms
+2015-05-31 15:28:28.059 TribeTool[94348:362534] [CDVTimer][file] 44.333041ms
+2015-05-31 15:28:28.059 TribeTool[94348:362534] [CDVTimer][TotalPluginStartup] 133.720040ms
+2015-05-31 15:28:28.067 TribeTool[94348:362534] active
+2015-05-31 15:28:28.252 TribeTool[94348:362534] Resetting plugins due to page load.
+2015-05-31 15:28:30.173 TribeTool[94348:362534] TRIBETOOL: entering mobileNotificationService
+2015-05-31 15:28:30.305 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+done@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18358:53
+completeRequest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18548:15
+requestLoaded@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18489:24
+2015-05-31 15:28:30.305 TribeTool[94348:362534] entering communityViewController
+2015-05-31 15:28:30.408 TribeTool[94348:362534] Socket Connected
+2015-05-31 15:28:30.507 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+done@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18358:53
+completeRequest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18548:15
+requestLoaded@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18489:24
+2015-05-31 15:28:30.507 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+done@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18358:53
+completeRequest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18548:15
+requestLoaded@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:18489:24
+2015-05-31 15:28:30.514 TribeTool[94348:362534] entering communityViewController
+2015-05-31 15:28:30.648 TribeTool[94348:362534] Finished load of: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/index.html#/community/the-mouse-landing
+2015-05-31 15:28:30.877 TribeTool[94348:362534] TRIBETOOL: entering communityService.loadCommunityModules
+2015-05-31 15:28:30.878 TribeTool[94348:362534] TRIBETOOL: entering communityService.onCommunityModulesLoaded()
+2015-05-31 15:28:30.910 TribeTool[94348:362534] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:28:30.910 TribeTool[94348:362534] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:29:01.802 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:53457:19
+dispatch@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4624:14
+handle@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4292:33
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2863:20
+tapClick@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2852:20
+tapTouchEnd@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2975:13
+2015-05-31 15:29:01.803 TribeTool[94348:362534] entering communityViewController
+2015-05-31 15:29:01.803 TribeTool[94348:362534] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:29:18.280 TribeTool[94348:362534] Recache request received. Recaching...
+2015-05-31 15:29:29.543 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:20063:30
+dispatch@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4624:14
+handle@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4292:33
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2863:20
+tapClick@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2852:20
+tapTouchEnd@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2975:13
+2015-05-31 15:29:29.545 TribeTool[94348:362534] entering communityViewController
+2015-05-31 15:29:29.549 TribeTool[94348:362534] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 15:29:33.723 TribeTool[94348:362534] ERROR: Error: Can't find variable: $ionicPlatform
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/controllers/navigationController.js:15:31
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/services/routeServices.js:80:38
+$broadcast@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23419:33
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:40889:32
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+$eval@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23100:28
+$digest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:22916:36
+$apply@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:23205:31
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:53457:19
+dispatch@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4624:14
+handle@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/jquery/jquery-1.11.0.js:4292:33
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2863:20
+tapClick@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2852:20
+tapTouchEnd@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/A1E3B4F4-A69F-4B69-8539-D1B404722D28/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:2975:13
+2015-05-31 22:20:54.381 TribeTool[98179:403223] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-31 22:20:54.399 TribeTool[98179:403223] Multi-tasking -> Device: YES, App: YES
+2015-05-31 22:20:54.441 TribeTool[98179:403223] Unlimited access to network resources
+2015-05-31 22:20:54.745 TribeTool[98179:403223] [CDVTimer][keyboard] 0.124991ms
+2015-05-31 22:20:54.745 TribeTool[98179:403223] [CDVTimer][localnotification] 0.158012ms
+2015-05-31 22:20:54.745 TribeTool[98179:403223] [CDVTimer][localnotification] 0.014007ms
+2015-05-31 22:20:54.856 TribeTool[98179:403223] [CDVTimer][socialsharing] 110.316992ms
+2015-05-31 22:20:54.930 TribeTool[98179:403223] [CDVTimer][file] 73.786020ms
+2015-05-31 22:20:54.931 TribeTool[98179:403223] [CDVTimer][TotalPluginStartup] 192.741990ms
+2015-05-31 22:20:54.943 TribeTool[98179:403223] active
+2015-05-31 22:20:55.154 TribeTool[98179:403223] Resetting plugins due to page load.
+2015-05-31 22:20:57.247 TribeTool[98179:403223] Socket Connected
+2015-05-31 22:20:57.348 TribeTool[98179:403223] Finished load of: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/88A15192-ACFF-465F-ABDB-BA5E0313FEDF/TribeTool.app/www/index.html#/post/the-mouse-landing/0/club-33-and-paint-the-night
+2015-05-31 22:20:57.497 TribeTool[98179:403223] Could not find community undefined.
+2015-05-31 22:20:58.323 TribeTool[98179:403223] TRIBETOOL: entering communityService.loadCommunityModules
+2015-05-31 22:20:58.323 TribeTool[98179:403223] TRIBETOOL: entering communityService.onCommunityModulesLoaded()
+2015-05-31 22:21:27.142 TribeTool[98179:403223] Reloading controllers in navigationService.refreshRoute()...
+2015-05-31 22:21:27.143 TribeTool[98179:403223] entering communityViewController
+2015-05-31 22:21:27.241 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:21:55.438 TribeTool[98179:403223] entering communityViewController
+2015-05-31 22:21:55.438 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:22:28.806 TribeTool[98179:403223] entering communityViewController
+2015-05-31 22:22:28.806 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:23:49.490 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:23:58.353 TribeTool[98179:404625] Camera.getPicture: source type 1 not available.
+2015-05-31 22:24:00.955 TribeTool[98179:404622] Camera.getPicture: source type 1 not available.
+2015-05-31 22:24:01.728 TribeTool[98179:404622] Camera.getPicture: source type 1 not available.
+2015-05-31 22:24:12.231 TribeTool[98179:403223] entering communityViewController
+2015-05-31 22:24:12.231 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:24:23.509 TribeTool[98179:403223] entering communityViewController
+2015-05-31 22:24:23.510 TribeTool[98179:403223] TRIBETOOL: entering cthemouselandingHomeController
+2015-05-31 22:25:34.452 TribeTool[98179:403223] Recache request received. Recaching...
+2015-06-01 08:16:37.559 TribeTool[98179:403223] Socket Disconnected
+2015-06-01 08:16:38.734 TribeTool[98179:403223] Socket Reconnecting...
+2015-06-01 08:16:41.521 TribeTool[98179:403223] Socket Reconnecting...
+2015-06-01 08:16:44.637 TribeTool[98179:403223] Socket Reconnecting...
+2015-06-01 08:16:44.657 TribeTool[98179:403223] THREAD WARNING: ['Console'] took '20.387939' ms. Plugin should use a background thread.
+2015-06-01 08:16:44.948 TribeTool[98179:403223] Socket Connected
+2015-06-01 09:54:43.393 TribeTool[98179:403223] THREAD WARNING: ['Keyboard'] took '93.417969' ms. Plugin should use a background thread.
+2015-06-04 12:22:46.461 TribeTool[28366:620653] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 12:22:46.475 TribeTool[28366:620653] Multi-tasking -> Device: YES, App: YES
+2015-06-04 12:22:46.493 TribeTool[28366:620653] Unlimited access to network resources
+2015-06-04 12:22:46.632 TribeTool[28366:620653] [CDVTimer][keyboard] 0.054955ms
+2015-06-04 12:22:46.643 TribeTool[28366:620653] [CDVTimer][localnotification] 10.810018ms
+2015-06-04 12:22:46.643 TribeTool[28366:620653] [CDVTimer][localnotification] 0.015974ms
+2015-06-04 12:22:46.702 TribeTool[28366:620653] [CDVTimer][socialsharing] 58.465004ms
+2015-06-04 12:22:46.722 TribeTool[28366:620653] [CDVTimer][file] 19.261956ms
+2015-06-04 12:22:46.846 TribeTool[28366:620653] [CDVTimer][splashscreen] 124.372005ms
+2015-06-04 12:22:46.846 TribeTool[28366:620653] [CDVTimer][TotalPluginStartup] 216.087997ms
+2015-06-04 12:22:46.872 TribeTool[28366:620653] active
+2015-06-04 12:22:46.979 TribeTool[28366:620653] Resetting plugins due to page load.
+2015-06-04 12:22:48.993 TribeTool[28366:620653] Socket Connected
+2015-06-04 12:22:49.297 TribeTool[28366:620653] OPEN database: tribetool.db
+2015-06-04 12:22:49.297 TribeTool[28366:620653] Initializing SQLitePlugin
+2015-06-04 12:22:49.297 TribeTool[28366:620653] Detected docs path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/35F7D59A-9551-4A06-A44D-BD919385216D/Documents
+2015-06-04 12:22:49.298 TribeTool[28366:620653] Detected Library path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/35F7D59A-9551-4A06-A44D-BD919385216D/Library
+2015-06-04 12:22:49.298 TribeTool[28366:620653] no cloud sync at path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/35F7D59A-9551-4A06-A44D-BD919385216D/Library/LocalDatabase
+2015-06-04 12:22:49.312 TribeTool[28366:620653] open full db path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/35F7D59A-9551-4A06-A44D-BD919385216D/Documents/tribetool.db
+2015-06-04 12:22:49.318 TribeTool[28366:620653] Good news: SQLite is thread safe!
+2015-06-04 12:22:49.320 TribeTool[28366:620653] THREAD WARNING: ['SQLitePlugin'] took '21.510986' ms. Plugin should use a background thread.
+2015-06-04 12:22:49.320 TribeTool[28366:620653] new transaction is waiting for open operation
+2015-06-04 12:22:49.328 TribeTool[28366:620653] new transaction is waiting for open operation
+2015-06-04 12:22:49.329 TribeTool[28366:620653] DB opened: tribetool.db
+2015-06-04 12:22:49.347 TribeTool[28366:620653] Finished load of: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/230F42CA-C41E-4398-BFE5-463D69ED817D/TribeTool.app/www/index.html#/login
+2015-06-04 12:22:49.366 TribeTool[28366:620653]  - remote notifications are not supported in the simulator
+2015-06-04 12:22:58.503 TribeTool[28366:620653] TRIBETOOL: In Background.
+2015-06-04 12:25:10.558 TribeTool[30227:625933] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/5FD51972-EA49-4CC6-87D9-EBD6F912B016/Library/Cookies/Cookies.binarycookies
+2015-06-04 12:25:10.649 TribeTool[30227:625933] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 12:25:10.650 TribeTool[30227:625933] Multi-tasking -> Device: YES, App: YES
+2015-06-04 12:25:10.660 TribeTool[30227:625933] Unlimited access to network resources
+2015-06-04 12:25:10.749 TribeTool[30227:625933] [CDVTimer][keyboard] 0.059962ms
+2015-06-04 12:25:10.755 TribeTool[30227:625933] [CDVTimer][localnotification] 6.170034ms
+2015-06-04 12:25:10.755 TribeTool[30227:625933] [CDVTimer][localnotification] 0.006974ms
+2015-06-04 12:25:10.793 TribeTool[30227:625933] [CDVTimer][socialsharing] 37.817955ms
+2015-06-04 12:25:10.795 TribeTool[30227:625933] [CDVTimer][file] 1.796007ms
+2015-06-04 12:25:10.805 TribeTool[30227:625933] [CDVTimer][splashscreen] 9.872973ms
+2015-06-04 12:25:10.805 TribeTool[30227:625933] [CDVTimer][TotalPluginStartup] 64.032018ms
+2015-06-04 12:25:10.929 TribeTool[30227:625933] active
+2015-06-04 12:25:11.081 TribeTool[30227:625933] Resetting plugins due to page load.
+2015-06-04 12:25:11.924 TribeTool[30227:625933] Socket Connected
+2015-06-04 12:25:12.174 TribeTool[30227:625933] OPEN database: tribetool.db
+2015-06-04 12:25:12.174 TribeTool[30227:625933] Initializing SQLitePlugin
+2015-06-04 12:25:12.174 TribeTool[30227:625933] Detected docs path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/5FD51972-EA49-4CC6-87D9-EBD6F912B016/Documents
+2015-06-04 12:25:12.175 TribeTool[30227:625933] Detected Library path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/5FD51972-EA49-4CC6-87D9-EBD6F912B016/Library
+2015-06-04 12:25:12.175 TribeTool[30227:625933] no cloud sync at path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/5FD51972-EA49-4CC6-87D9-EBD6F912B016/Library/LocalDatabase
+2015-06-04 12:25:12.183 TribeTool[30227:625933] open full db path: /Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Data/Application/5FD51972-EA49-4CC6-87D9-EBD6F912B016/Documents/tribetool.db
+2015-06-04 12:25:12.187 TribeTool[30227:625933] Good news: SQLite is thread safe!
+2015-06-04 12:25:12.188 TribeTool[30227:625933] THREAD WARNING: ['SQLitePlugin'] took '13.479004' ms. Plugin should use a background thread.
+2015-06-04 12:25:12.189 TribeTool[30227:625933] new transaction is waiting for open operation
+2015-06-04 12:25:12.196 TribeTool[30227:625933] new transaction is waiting for open operation
+2015-06-04 12:25:12.196 TribeTool[30227:625933] DB opened: tribetool.db
+2015-06-04 12:25:12.211 TribeTool[30227:625933] Finished load of: file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/index.html#/login
+2015-06-04 12:25:12.313 TribeTool[30227:625933]  - remote notifications are not supported in the simulator
+2015-06-04 12:25:25.777 TribeTool[30227:625933] Reloading controllers in navigationService.refreshRoute()...
+2015-06-04 12:25:26.134 TribeTool[30227:625933] entering communityViewController
+2015-06-04 12:25:26.429 TribeTool[30227:625933] ERROR: Error: null is not an object (evaluating 'scrollView.scrollTo')
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:48921:17
+processQueue@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21888:29
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:21904:39
+completeOutstandingRequest@file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:13604:15
+file:///Users/rosshartmann/Library/Developer/CoreSimulator/Devices/96298E43-7720-48D1-8C8A-7EE94CE9E8C6/data/Containers/Bundle/Application/B77F439B-2CD5-480C-AC5A-303947935B40/TribeTool.app/www/vendor/ionic/js/ionic.bundle.js:13984:33

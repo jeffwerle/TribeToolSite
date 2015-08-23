@@ -1,0 +1,95 @@
+.pane {
+  background-color: @body-bg;
+}
+
+.card {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.row {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.card .item-avatar {
+  padding-left: 20px;
+  background-color: @postSummaryCardHeaderBackgroundColor;
+}
+
+.card .tabs {
+  background-color: @controlAreaBackgroundColor;
+}
+
+// Override padding on card's avatar item
+.card .item-avatar {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+// Remove padding from card's avatar row
+.card .item-avatar .row {
+  padding-top: 0px;
+}
+
+// Pad the first column in a card's avatar row
+// http://stackoverflow.com/questions/13352080/match-all-class-selectors-that-begin-with
+.card .item-avatar .row div[class^="col-"],
+.card .item-avatar .row div[class*=" col-"]{
+  padding-top: 5px;
+}
+
+.card .item-avatar .row .col {
+  padding-top: 0px;
+}
+
+div.list:last-child.card {
+  margin-bottom: 0px;
+}
+
+.card .item,
+.list .item,
+.card .item-content,
+.list .item-content {
+
+  overflow: visible;
+  white-space: normal;
+
+  h1, h2, h3, h4, h5, h6, p {
+    overflow: visible;
+    white-space: normal;
+  }
+}
+
+// Headers in a card's item avatar should not be truncated
+.card .item-avatar h1,
+.card .item-avatar h2,
+.card .item-avatar h3,
+.card .item-avatar h4,
+.card .item-avatar h5,
+.card .item-avatar h6,{
+  overflow: visible;
+  white-space: normal;
+}
+
+.card .item h2 {
+  font-size: 22px;
+}
+
+textarea.item-input,
+input.item-input{
+  width: 100%;
+}
+
+// Remove the header item-avatar separation from the body
+.card .item.item-avatar {
+  border-bottom:none;
+  background-color: inherit;
+}
+.card .item.item-body {
+  border-top: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+

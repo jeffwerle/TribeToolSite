@@ -1,0 +1,34 @@
+<div>
+    <div ng-show="processing"><loading></loading> Loading...</div>
+    <div ng-if="!processing && showDashboard && specializationEntry">
+
+        <div class="col-xs-9">
+            <h3 class="centered">Your "{{specializationEntry.Name}}" Dashboard</h3>
+
+            <div>
+                <perfect-scrollbar class="scroller centered" style="height: 500px;" suppress-scroll-x="false">
+                    <skill-tree specialization-entry="specializationEntry" account-specialization="accountSpecialization"></skill-tree>
+                </perfect-scrollbar>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="centered">
+                <div>
+                    Next Lesson Time: ""
+                </div>
+                <div ng-if="specializationCommunity && specializationCommunity.Id !== community.Id" style="margin-bottom: 20px;">
+                    <button ng-click="goToSpecializationCommunity()" class="btn btn-primary">Switch to {{specializationCommunity.Name}} Community</button>
+                </div>
+                <div>
+                    <h3 style="margin-top: 0px;">Currently Learning</h3>
+                    <skill-step class="centered" ng-repeat="step in unlockedSteps" specialization-entry="specializationEntry" step="step"></skill-step>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div ng-if="!processing && !showDashboard && specializationEntry">
+        <div>Market the specialization!</div>
+    </div>
+</div>

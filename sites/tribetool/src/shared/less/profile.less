@@ -1,0 +1,47 @@
+.comment-profile-picture {
+  .border-radius(5%);
+  //.bordered;
+  height: @commentProfilePictureHeight;
+  border: @commentPictureBorder;
+  border-radius: @roundPictureBorderRadius;
+}
+
+.header-profile-picture .comment-profile-picture {
+  height: 20px;
+}
+
+.comment-profile-picture-container {
+
+}
+
+
+.profile-picture-container {
+
+}
+
+.profile-picture-width {
+  width: @profilePictureHeight;
+}
+.profile-picture {
+  .profile-picture-width();
+  height: @profilePictureHeight;
+
+}
+
+
+.profile-picture-level {
+  color: #29d;
+  font-size: 9px;
+}
+
+.profile-picture-progress-bar-container {
+  position: relative;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+}
+
+.profile-picture-progress-bar {
+  width: 0%;
+  height: 2px;
+  background: #29d;
+}

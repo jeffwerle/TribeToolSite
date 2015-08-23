@@ -1,0 +1,130 @@
+@emotionButtonHeightLarge: 50px;
+@emotionButtonWidthLarge: 50px;
+
+@emotionButtonHeight: 30px;
+@emotionButtonWidth: 30px;
+@emotionButtonFontSize: 25px;
+@emotionButtonZoom: .25;
+
+.emotion-vote-mechanism .circle-menu {
+  position:relative;
+  height: @emotionButtonHeight;
+  width: @emotionButtonWidth;
+}
+
+.emotion-vote-mechanism .emotion-button i {
+  .centered;
+  height: @emotionButtonHeight;
+  width: @emotionButtonWidth;
+  font-size: @emotionButtonFontSize;
+  margin-top: 2px;
+}
+
+.toolbar-emotion-vote-mechanism.emotion-vote-mechanism {
+  height: @emotionButtonHeightLarge;
+  width: @emotionButtonWidthLarge;
+
+  .emotion-button i {
+    .centered;
+    height: @emotionButtonHeightLarge;
+    width: @emotionButtonWidthLarge;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+
+.emotion-vote-mechanism .inactive, .emotion-vote-mechanism .inactive.active {
+  opacity: 1;
+}
+
+.emotion-vote-mechanism>div {
+  float:none;
+}
+
+.circle-menu {
+  top: inherit;
+  left: inherit;
+  -webkit-transform: inherit;
+  transform: inherit;
+  height: @emotionButtonHeight;
+  width: @emotionButtonWidth;
+
+  div.circle-menu-btn.trigger {
+
+
+    .image.emotion-button {
+      width: 25px;
+      height: 25px;
+      background-size: 25px;
+
+      .emotion-sprite {
+        zoom: @emotionButtonZoom;
+        -moz-transform: scale(@emotionButtonZoom);
+      }
+    }
+
+    height: @emotionButtonHeight;
+    width: @emotionButtonWidth;
+
+    >.emotion-button {
+      height: @emotionButtonHeight;
+      width: @emotionButtonWidth;
+    }
+  }
+}
+
+.toolbar-emotion-vote-mechanism {
+  .circle-menu {
+    height: @emotionButtonHeightLarge;
+    width: @emotionButtonWidthLarge;
+
+    div.circle-menu-btn.trigger {
+
+      height: @emotionButtonHeightLarge;
+      width: @emotionButtonWidthLarge;
+
+      >.emotion-button {
+        height: @emotionButtonHeightLarge;
+        width: @emotionButtonWidthLarge;
+      }
+    }
+  }
+}
+
+
+.circle-menu.active .rotator-right-3:nth-child(1) .circle-menu-btn-icon {
+  transform: translateY(-3.5em) rotate(0deg);
+  -moz-transform: translateY(-3.5em) rotate(0deg);
+  -webkit-transform: translateY(-3.5em) rotate(0deg);
+}
+
+.circle-menu.active .rotator-right-3:nth-child(2) .circle-menu-btn-icon {
+  transform: translateY(-4.5em) rotate(-44deg);
+  -moz-transform: translateY(-4.5em) rotate(-44deg);
+  -webkit-transform: translateY(-4.5em) rotate(-44deg);
+}
+
+.circle-menu.active .rotator-right-3:nth-child(3) .circle-menu-btn-icon {
+  transform: translateY(-3.5em) rotate(-83deg);
+  -moz-transform: translateY(-3.5em) rotate(-83deg);
+  -webkit-transform: translateY(-3.5em) rotate(-83deg);
+}
+
+.emotion-vote-mechanism.toolbar-emotion-vote-mechanism .circle-menu,
+.toolbar-container .emotion-vote-mechanism .circle-menu {
+  //background-color: #DDDDDD;
+  //.dark-border;
+
+  &:hover {
+    //.btn-primary;
+    color: white;
+    background-color: #ccc;
+  }
+}
+
+.circle-menu .icons .circle-menu-btn.button-stable {
+  &:hover {
+    background-color: rgba(172, 172, 172, 0.9)
+  }
+
+}

@@ -1,0 +1,50 @@
+
+#wrapper {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  display: block;
+  padding: 20px;
+  width: 90%;
+}
+
+.chord { float: left; padding-top: 8px;}
+.chordChart { }
+
+.chordname {
+  width: 80%;
+  margin: auto;
+  font-family: "Marvel", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section {
+  padding-top: 30px;
+  clear: left;
+}
+
+.section .title {
+  color: black;
+  font-family: "Marvel", cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+.section .description {
+  color: #444444;
+  font-family: "Marvel", cursive;
+  font-size: 22px;
+}
+
+.topbar {
+  float: right;
+  font-family: "Marvel", cursive;
+  padding: 5px;
+  padding-left: 8px;
+  border-bottom: dotted green 1px;
+  border-left: dotted green 1px;
+}
+
+.topbar a { border: solid green 0px; }
+

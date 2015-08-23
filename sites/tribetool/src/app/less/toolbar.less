@@ -1,0 +1,101 @@
+.playlist-item {
+  border-top: 1px solid @grayDark;
+  cursor: pointer;
+  padding: 4px;
+  padding-left:10px;
+}
+
+.playlist-item:hover {
+  color: white;
+  background: #6284A2;
+}
+
+@toolbarBlue: @brand-color;//#1171A2;
+@facebookToolbarBlue: @brand-color-divider-dark;//#4e69a2;
+
+
+.playlist-item.selected {
+  color: white;
+  background: @facebookToolbarBlue;
+}
+
+.playlist-item.selected.playing {
+  color: white;
+  background: @toolbarBlue;
+}
+
+
+
+.playlist-item.selected:hover {
+  background: #33363f;
+}
+
+.toolbar-top {
+  margin-bottom: 0px; cursor: pointer; padding: 5px;
+  background-color: @well-bg;
+}
+.toolbar-top.open,
+.toolbar-top.playing{
+  background-color: @toolbarBlue;
+  color: white;
+}
+
+.toolbar-top.open.paused{
+  background-color: @facebookToolbarBlue;
+  color: white;
+}
+
+
+.toolbar {
+  .bottom-right-fixed;
+  .pull-right;
+  width: 270px;
+}
+.toolbar.phone {
+  width: 170px;
+}
+
+
+
+
+// Fix to keep the toolbar fixed on resize (instead of position:relative)
+#toolbar.ui-resizable {
+  position:fixed;
+}
+.toolbar-resizable-helper {
+  border: 2px dotted #00F;
+}
+
+
+.toolbar-collapsible-sidebar {
+  width: 100%;
+  height: 100%;
+}
+.toolbar-collapsible-sidebar:hover {
+  background-color: lightgrey;
+}
+
+.toolbar-collapsible-sidebar-container {
+  float: left;
+  position: relative;
+  padding: 0px;
+}
+
+#toolbarPlaylistAreaContainer {
+  float: left;
+  position: relative;
+  padding: 0px;
+}
+
+#toolbarVideoPlayerContainer {
+  float: left;
+  position: relative;
+  padding: 0px;
+}
+
+#toolbarTop > span {
+  display: inline-block;
+  height: 100%;
+  padding-right: 7px;
+  padding-left: 7px;
+}

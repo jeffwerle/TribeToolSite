@@ -1,0 +1,149 @@
+.comment-input-container {
+  clear: both;
+}
+
+.comment-picture-container {
+  float: left;
+}
+
+.comment-container {
+  .post-summary-container;
+}
+
+.comment-input {
+  height: @commentProfilePictureHeight;
+}
+
+.comment-input-well {
+  .status-input-well;
+}
+
+.comment-input-content {
+  .force-fill-width;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+
+.comment-well {
+  .dark-well;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+
+  margin-bottom: 5px;
+}
+
+
+.comment-content-and-controls {
+  .force-fill-width;
+  padding-left: 20px;
+}
+
+.comment-content {
+  .post-summary-content;
+  padding-left: 10px;
+}
+
+.comment-content-container {
+  .post-summary-content-container
+}
+
+.comment-control-area {
+  .status-control-area;
+}
+
+
+.comment-layer {
+  padding-left: 20px;
+}
+
+.collapsed-comment-info {
+  .post-submitted-by-text;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.comment-collapse-icon {
+  float: left;
+  cursor:pointer;
+  position:absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.quote-well {
+  .well;
+  .dark-border;
+}
+
+.comment-tag-container {
+  .post-summary-tag-container;
+}
+
+.comment-replies-container {
+  .clearfix;
+  padding-right: 5px;
+  //padding-bottom: 5px;
+}
+
+
+
+.comment-entry {
+
+  .progress-radial {
+    width: 40px;
+    height: 40px;
+
+    .profile-picture-level-progress {
+      width: 40px;
+    }
+  }
+  .comment-profile-picture {
+    height: 30px;
+  }
+
+  .comment-input-container {
+    .comment-profile-picture {
+      height: @commentProfilePictureHeight;
+    }
+  }
+
+  .comment-header {
+    float: left;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    line-height: @commentProfilePictureHeight;
+    background-color: @controlAreaBackgroundColor;
+
+    .comment-picture-container {
+      margin-left: 10px;
+    }
+
+    .profile-name {
+      font-size: 15px;
+      .profile-name-format;
+    }
+
+    .comment-header-content {
+      float: left;
+      .comment-content;
+      padding-left: 5px;
+    }
+  }
+
+  .comment-body {
+  }
+
+  .tag-picture {
+    height: 30px;
+  }
+}
+

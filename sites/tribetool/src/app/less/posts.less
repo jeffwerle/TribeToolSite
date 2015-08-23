@@ -1,0 +1,305 @@
+@postSummaryPictureContainerMarginRight: 15px;
+@leftMarginForLeftProfilePicture: -(@commentProfilePictureWidth + @postSummaryPictureContainerMarginRight);
+@alignWithContentForLeftProfilePicture: @commentProfilePictureWidth + @postSummaryPictureContainerMarginRight;
+
+// POST SUMMARY
+// ----------------
+
+
+
+.cover-photo-carousel-container {
+  //box-shadow: 1px 1px 2px 0px black;
+}
+
+.cover-photo-carousel,
+.cover-photo-carousel > .carousel-inner,
+.cover-photo-carousel > .carousel-inner > .item {
+  height: 150px;
+}
+
+.covert-photo-carousel-caption {
+  position:absolute;
+  bottom: 30px;
+  left: -50px;
+}
+
+.cover-photo-carousel .carousel-indicators{
+  display:none;
+}
+
+
+.cover-photo-container {
+  //.border-radius(5px);
+  //.bordered;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.cover-photo {
+  width: 100%;
+
+  display: block;/* corrects small inline gap at bottom of containing div */
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  /*width: auto\9;
+  /* ie8+9 - use modernizr instead of this \9 hack */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic;
+  /* optionally force a minimum size if img src size is known: */
+  /* min-height: 320px; /* max-height of .crop-height */
+  /* min-width: 480px; /* proportional to above */
+
+  /* actually, aligns left within .cropheight */
+  float: right;
+  /* clearfix after? */
+
+  margin: auto;
+  margin-top: -15%;
+}
+
+.cover-photo-flip {
+  -webkit-transform: rotate(180deg);
+  -moz-transform:    rotate(180deg);
+  -ms-transform:     rotate(180deg);
+  -o-transform:      rotate(180deg);
+  transform:         rotate(180deg);
+  /* needed? not sure */
+  zoom: 1;
+}
+
+
+
+
+
+
+
+.community-page-toolbar {
+
+}
+
+
+.post-container {
+  margin: 0;
+  padding-left: 3px;
+  margin-bottom: 8px;
+
+
+  .post-header {
+    margin-bottom: 10px;
+  }
+}
+
+
+.post-summary-picture-container {
+  width: @commentProfilePictureWidth;
+  margin-right: @postSummaryPictureContainerMarginRight;
+}
+
+
+.post-summary-container {
+  position: relative;
+  .white-well();
+
+  margin-top: 0px;
+  margin-bottom: 8px;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+
+  //.force-fill-width;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+
+
+}
+
+.post-summary-content-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.post-summary-content {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  overflow-x: hidden;
+}
+
+.post-summary {
+  @media (min-width: 768px) {
+    margin-left: @leftMarginForLeftProfilePicture;
+  }
+
+
+
+  .post-summary-header {
+    background-color: @controlAreaBackgroundColor;
+    padding-top: 5px;
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    overflow-x: hidden;
+
+
+    @media (max-width: 767px) {
+      .comment-picture-container {
+        margin-right: 10px;
+      }
+    }
+
+    .profile-name {
+      font-size: 13px;
+      .profile-name-format;
+    }
+  }
+  .comment-profile-picture {
+    border-radius: @roundPictureBorderRadius;
+  }
+}
+
+
+.post-summary-tag-container {
+  position: relative;
+  /*
+  top: 35%;
+  transform: translateY(35%);
+  */
+}
+
+.post-content-content {
+  padding-right: 15px;
+  padding-left: 20px;
+}
+
+
+.post-summary-title {
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.post-summary-description {
+
+}
+
+
+
+
+
+// POST MAIN
+// ---------------
+.post-content-container {
+
+  position: relative;
+  .white-well();
+  margin-right: 20px;
+  margin-bottom: 0px;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+
+  padding-top: 25px;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+.post-type-picture {
+  height: 25px;
+  width: 25px;
+}
+
+.post-type-picture-container {
+  padding: 2px;
+}
+
+.post-type-picture-icon {
+  color: @brand-color;
+  font-size: 25px;
+}
+
+
+.post-answer-icon {
+  margin-right: 10px;
+}
+.post-answer-unaccepted-icon {
+  color: lightgrey;
+}
+.post-answer-unaccepted-icon:hover {
+  color:lightgreen;
+}
+
+.post-answer-accepted-icon {
+  color: green;
+}
+
+.post-answer-accepted {
+  box-shadow: 0 0 10px green, 0 0 5px green;
+}
+
+.post-content-collapse-icon {
+  float: left;
+  cursor:pointer;
+  position:relative;
+  top: -10px;
+  left: -10px;
+}
+
+.post-summary-control-area {
+  .control-area;
+  clear:both;
+  //padding-top:5px;
+  padding: 2px;
+}
+
+.post-content-control-area {
+  .control-area;
+}
+
+div.community-sidebar {
+  padding-left: 10px;
+  padding-right: 10px;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+}
+
+
+
+
+.community-page,
+.stream-page {
+  .community-background-video {
+    height: 150px;
+
+    .pattern-overlay {
+      height: 150px;
+      background-color: transparent;
+    }
+
+    .background-video-caption {
+      left: 0px;
+      font-size: 15px;
+    }
+  }
+}

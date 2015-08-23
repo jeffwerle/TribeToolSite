@@ -1,0 +1,46 @@
+<header>
+    <meta name="robots" content="noindex">
+</header>
+
+<div>
+    <div class="text-center" ng-show="!valid || processingForm">
+        <loading></loading>
+    </div>
+    <div class="well col-sm-offset-4 col-sm-4" ng-if="valid && !confirmed" ng-cloak>
+        <div class="centered">
+
+            <div ng-if="!used && !expired">
+                <h3>Confirming Your Account...</h3>
+                <loading></loading>
+            </div>
+
+            <div ng-show="confirmationEmailSent" style="color: green">
+                <h3>A new Account Confirmation Link has been e-mailed to you!</h3>
+                <h4>Please check your e-mail.</h4>
+            </div>
+
+            <div ng-show="used">
+                <div ng-show="!confirmationEmailSent">
+                    <h3>It appears that this link has already been used!</h3>
+                    <h4>Feel free to <a class="pointer" ng-click="emailConfirmationLink()">request a new Account Confirmation Link</a>.</h4>
+                </div>
+            </div>
+            <div ng-show="!used && expired">
+                <div ng-show="!confirmationEmailSent">
+                    <h3>It appears that this link has expired!</h3>
+                    <h4>Feel free to <a class="pointer" ng-click="emailConfirmationLink()">request a new Account Confirmation Link</a>.</h4>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="well col-sm-offset-4 col-sm-4" ng-if="confirmed" ng-cloak>
+        <div ng-if="confirmed" class="centered">
+            <h3 style="color: green;">Your account has been confirmed. Please login below.</h3>
+        </div>
+
+        <login style="margin-top: 20px;" options="loginOptions" email="email"></login>
+    </div>
+
+</div>

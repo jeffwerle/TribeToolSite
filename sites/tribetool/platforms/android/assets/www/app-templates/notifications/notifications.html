@@ -1,0 +1,10 @@
+<ion-modal-view ng-controller="notificationsController">
+    <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Notifications</h1>
+        <div class="button button-clear" ng-click="cancel()"><span class="icon ion-close"></span></div>
+    </ion-header-bar>
+    <ion-content>
+        <notifications notifications="notifications" options="notificationOptions"></notifications>
+
+    </ion-content>
+</ion-modal-view>

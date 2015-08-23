@@ -1,0 +1,82 @@
+<div>
+    <section ng-show="loading">
+        <loading></loading> Loading...
+    </section>
+    <section ng-show="!loading">
+        <div ng-if="mediaService.isPhone">
+            <button ng-show="!showConversations" class="btn btn-primary" ng-click="$parent.showConversations = true">Show Conversations</button>
+            <button ng-show="showConversations" class="btn btn-primary" ng-click="$parent.showConversations = false">Hide Conversations</button>
+        </div>
+        <div class="col-sm-3" ng-if="conversations && conversations.length > 0" ng-show="showConversations">
+            <h4>Conversations:</h4>
+            <perfect-scrollbar id="conversationScrollbar" class="scroller" style="height: 100%; white-space:normal;" suppress-scroll-x="true" >
+                <div ng-repeat="conversation in conversations" style="position: relative;" class="conversation-well pointer conversation-summary" ng-class="{'selected': conversation.selected}" ng-click="selectConversation(conversation)">
+                    <div style="font-weight: bold;">{{conversation.Subject}}</div>
+                    <div style="font-size: 12px;">{{conversation.Messages[conversation.Messages.length - 1].DateSent | dateRobust}}</div>
+                    <div>
+                        <span class="message-info-text" ng-repeat="participant in conversation.Participants">
+                            {{participant | profileName}}<span ng-show="!$last">, </span>
+                        </span>
+                    </div>
+                    <div ng-if="conversation.Messages && conversation.Messages.length > 0">{{conversation.Messages[conversation.Messages.length - 1].Description}}</div>
+                    <div class="conversation-summary-notification-number" ng-show="conversation.UnreadMessageReceipts.length > 0">{{conversation.UnreadMessageReceipts.length}}</div>
+                </div>
+            </perfect-scrollbar>
+        </div>
+        <div ng-class="{'col-sm-9': conversations && conversations.length > 0, 'col-sm-offset-3 col-sm-6': !conversations || conversations.length <= 0}" class="">
+            <button class="btn btn-primary pull-right" ng-click="newConversation()"><i class="fa fa-plus"></i> New Conversation</button>
+
+            <div ng-if="conversation" style="clear:both;">
+
+                <section>
+                    <div ng-if="!conversation.Id">
+                        <h4>Subject:</h4>
+                        <input class="form-control" placeholder="Subject" ng-model="conversation.Subject" type="text">
+                    </div>
+                    <div ng-if="conversation.Id">
+                        <h3 style="margin-top: 0px;">{{conversation.Subject}}</h3>
+                    </div>
+                </section>
+                <section>
+                    <div ng-if="!conversation.Id">
+                        <h4>Recipients:</h4>
+                        <account-search-bar search-text="searchBarOptions.searchText" options="searchBarOptions"></account-search-bar>
+                    </div>
+                    <div>
+                        <div ng-repeat="recipient in recipients" class="conversation-recipient-well pull-left" style="margin-bottom:0px;">
+                            <span ng-show="!conversation.Id" class="pull-right"><i class="fa fa-times red-icon pointer" ng-click="removeRecipient(recipient)"></i></span>
+                            <comment-picture style="float: left;" account="recipient" show-only-picture="true" suppress-progress="true" hide-compatibility="true"></comment-picture>
+                            <profile-name account="recipient"></profile-name>
+                        </div>
+                    </div>
+                </section>
+                <div ng-if="conversation.Id" style="border: 1px solid black; clear:both;">
+                    <a id="messageArea"></a>
+                    <perfect-scrollbar id="messageScrollbar" class="scroller" ng-style="{'height': conversation.Id ? '200px' : '100px'}" style="white-space:normal;" suppress-scroll-x="true" >
+                        <div class="col-xs-12" style="margin-top: 10px;">
+                            <div ng-repeat="message in conversation.Messages" class="message-well">
+                                <a id="{{message.Id}}"></a>
+                                <div style="float: left; margin-right: 20px;">
+                                    <comment-picture account="message.account" options="profileNameOptions" show-only-picture="true" suppress-progress="true" hide-compatibility="true"></comment-picture>
+                                </div>
+                                <div class="message-info-text"><profile-name account="message.account"></profile-name> at {{message.DateSent | dateRobust}}</div>
+                                <div btf-markdown="message.FormattedText"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </perfect-scrollbar>
+                </div>
+
+                <div class="message-input-well" style="">
+                    <form name="messageForm" ng-submit="sendMessage()">
+                        <content-editor options="formattingHelperOptions" text="$parent.messageText" placeholder="'Say something fascinating...'" show-toolbar="false"></content-editor>
+                        <p ng-show="showErrors && recipients.length <= 0" style="color: Red;">Please specify at least one recipient.</p>
+                        <button ng-show="!processing" class="btn btn-primary pull-right" style="margin-right: 20px;">Send</button>
+                        <div ng-show="processing"><loading></loading> Sending...</div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

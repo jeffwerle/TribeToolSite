@@ -1,0 +1,1 @@
+See cmd.txt in sites/tribetool/ for info

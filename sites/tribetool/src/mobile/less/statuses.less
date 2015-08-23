@@ -1,0 +1,67 @@
+.status-input {
+  margin-bottom: 20px;
+}
+
+@statusItemAvatarRowTwoLineHeight: 55px;
+@statusItemAvatarRowThreeLineHeight: 67px;
+.status-entry {
+
+  .list.card {
+    margin-top: 5px;
+
+    &.comment-replies-card {
+      margin-top: 0px;
+      padding-bottom: 5px;
+      background-color: #f6f7f8;
+      > .item.item-body {
+        background-color: #f6f7f8;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+    }
+
+
+    > .item-avatar {
+      min-height: 0px;
+      padding-bottom: 0px;
+
+      > .row {
+        &.two-line {
+          height: @statusItemAvatarRowTwoLineHeight;
+        }
+        &.three-line {
+          height: @statusItemAvatarRowThreeLineHeight;
+        }
+
+        padding-bottom: 0px;
+        white-space: normal;
+
+      }
+
+    }
+
+    > .item.item-body {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .col {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        p.info-text {
+          font-size: 12px;
+        }
+      }
+  }
+
+  p {
+    margin-top: 0px;
+  }
+
+
+  }
+}

@@ -1,0 +1,30 @@
+
+.notification-well {
+  .bordered-well;
+  background-color: @notificationWellBackgroundColor !important;
+  //box-shadow: @well-box-shadow;
+}
+.notification-well.unread {
+  border-color: green;
+  border-width: 3px;
+}
+
+
+.notification-number {
+  display: block;
+  height: 12px;
+  width: 12px;
+  line-height: 12px;
+
+  -moz-border-radius: 12px; /* or 50% */
+  border-radius: 12px; /* or 50% */
+
+  text-align: center;
+
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  margin-top:-12px;
+  margin-left:6px;
+  position:absolute;
+}

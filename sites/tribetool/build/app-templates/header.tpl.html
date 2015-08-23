@@ -1,0 +1,146 @@
+<div ng-controller="headerController">
+
+    <a id="top"></a>
+    <nav ng-init="initialized()" class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px;" role="navigation">
+        <div class="container-fluid" style="padding-left: 10px;" ng-style="{'padding-right': isPhone ? '15px' : '0px' }">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header dropdown" dropdown>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" ng-click="headerService.options.isCollapsed = !headerService.options.isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a ng-if="!isPhone" ng-click="logoClicked()" class="dropdown-toggle navbar-brand pointer" dropdown-toggle style="padding-top: 7px; padding-bottom: 0px; padding-right: 0px;">
+                    <div class="centered">
+                        <span ng-if="!communityService.communityOptions.style || !communityService.communityOptions.style.logoClass" style="padding-right: 5px; padding-bottom: 0px;">{{community.Name}}</span>
+                        <span ng-if="communityService.communityOptions.style && communityService.communityOptions.style.logoClass" style="font-size: 0px;"><div class="{{communityService.communityOptions.style.logoClass}} header-community-logo"></div></span>
+                    </div>
+                </a>
+
+                <ul ng-if="!isPhone && isLoggedIn" class="dropdown-menu">
+                    <li><a href="/home">Tribe Tool</a></li>
+                    <li class="divider"></li>
+                    <li ng-repeat="community in accessibleCommunities | excludeLoadedCommunity">
+                        <a ng-href="/community/{{community.Url}}">{{community | communityNameWithTopic}}</a>
+                    </li>
+                </ul>
+                <!--
+                <a href="/home" class="navbar-brand pointer" style="padding-top: 5px; padding-bottom: 5px;">
+                    <img class="centered" style="max-height: 30px;" src="images/Icon-Simple.png" alt="Nitch Logo">
+                    <div class="centered" style="font-size: 9px;">{{community.Name}}</div>
+                </a>
+                -->
+
+
+                <div ng-if="isPhone">
+                    <a ng-if="!headerService.options.useMinimalHeader" ng-class="{ active: isActive('community')}" ng-href="/community/{{communityService.community.Url}}" class="navbar-mobile-item pointer" title="Community"><i class="fa fa-users"></i></a>
+                    <a ng-if="!isLoggedIn && !headerService.options.useMinimalHeader" ng-class="{ active: isActive('wiki')}" ng-href="/wiki/{{communityService.community.Url}}" class="navbar-mobile-item pointer" title="Wiki"><i class="fa fa-bookmark"></i></a>
+
+                    <a ng-if="isLoggedIn" ng-class="{ active: isActive('stream')}" ng-href="/stream/{{communityService.community.Url}}" class="navbar-mobile-item pointer" title="Stream"><i class="fa fa-newspaper-o"></i></a>
+
+                    <a ng-if="isLoggedIn && communityService.community" ng-class="{ active: isActive('profile')}" ng-href="/profile/{{communityService.community.Url}}/{{account.Username}}" title="Profile" class="navbar-mobile-item  pointer"><i class="fa fa-user"></i></a>
+                    <a ng-if="isLoggedIn && !communityService.community" ng-class="{ active: isActive('profile')}" ng-href="/profile" title="Profile" class="navbar-mobile-item  pointer"><i class="fa fa-user"></i></a>
+                    <a ng-if="isLoggedIn" ng-class="{ active: viewingNotifications, 'has-notifications': notificationCount > 0}" class="navbar-mobile-item pointer" ng-click="showNotifications()" title="Notifications"><i class="glyphicon glyphicon-globe"></i> <div class="notification-number" ng-show="notificationCount > 0">{{notificationCount}}</div></a>
+
+                    <a ng-if="isLoggedIn" ng-class="{ active: isActive('messages'), 'has-notifications': messageCount > 0}" class="navbar-mobile-item pointer" href="/messages" title="Messages"><i class="fa fa-envelope-o"></i> <div class="notification-number" ng-show="messageCount > 0">{{messageCount}}</div></a>
+
+                    <div class="pull-right">
+
+
+                        <button ng-if="!isLoggedIn"  ng-click="signUp()" class="btn btn-success navbar-btn navbar-mobile-item input-xs header-button" style="margin-right: 5px; width: 100px;">Join Free</button>
+                        <button ng-if="!isLoggedIn"  ng-click="go('login')" class="btn btn-default navbar-btn navbar-mobile-item input-xs header-button" style="margin-right: 5px;">Login</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div ng-if="isPhone" class="collapse navbar-collapse" collapse="headerService.options.isCollapsed" style="padding-right: 0px;">
+
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+
+                    <li ng-class="{ active: isActive('wiki')}" class="dropdown" dropdown><a ng-href="/wiki/{{communityService.community.Url}}" class="pointer" title="Wiki"><i class="fa fa-bookmark"></i></a></li>
+                    <li ng-if="isLoggedIn" ng-class="{ active: isActive('settings')}" class="dropdown" dropdown>
+                        <a href class="dropdown-toggle pointer" dropdown-toggle><i class="glyphicon glyphicon-cog"></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li ng-class="{ active: isActive('account-settings')}"><a class="pointer" href="/account-settings" title="Account Settings"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+                            <li ng-class="{ active: isActive('contact')}"><a class="pointer" href="/contact" title="Contact"><i class="glyphicon glyphicon-envelope"></i> Contact Us</a></li>
+                            <li ng-if="isTeacher" ng-class="{ active: isActive('teach')}"><a class="pointer" href="/teach" title="Teach"><i class="fa fa-graduation-cap"></i> Teach</a></li>
+                            <li><a class="pointer" ng-click="logout()" title="Sign Out"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+
+            <div ng-if="!isPhone" class="collapse navbar-collapse" collapse="headerService.options.isCollapsed" style="padding-right: 0px;">
+                <ul class="nav navbar-nav">
+
+                    <li class="divider-vertical"></li>
+                    <li ng-if="!headerService.options.useMinimalHeader" id="communityHeaderMenu" ng-class="{ active: isActive('community')}"><a ng-href="/community/{{communityService.community.Url}}" class="pointer" title="Community"><i class="fa fa-users"></i></a></li>
+                    <li ng-if="!headerService.options.useMinimalHeader" class="divider-vertical"></li>
+                    <li ng-if="isLoggedIn" id="streamHeaderMenu" ng-class="{ active: isActive('stream')}"><a ng-href="/stream/{{communityService.community.Url}}" class="pointer" title="Stream"><i class="fa fa-newspaper-o"></i></a></li>
+                    <li ng-if="isLoggedIn" class="divider-vertical"></li>
+                    <li ng-if="!headerService.options.useMinimalHeader" id="wikiHeaderMenu" ng-class="{ active: isActive('wiki')}"><a ng-href="/wiki/{{communityService.community.Url}}" class="pointer" title="Wiki"><i class="fa fa-bookmark"></i></a></li>
+                    <li ng-if="!headerService.options.useMinimalHeader" class="divider-vertical"></li>
+                    <li ng-if="isLoggedIn" id="profileHeaderMenu" ng-class="{ active: isActive('profile')}">
+                        <a ng-if="communityService.community" ng-href="/profile/{{communityService.community.Url}}/{{account.Username}}" title="Profile" class="pointer">
+                            <div style="float: left;"><comment-picture class="header-profile-picture" ng-if="communityService.community && account" account="account" show-only-picture="true" hide-compatibility="true" suppress-progress="true"></comment-picture></div>
+                            <div style="float: left; margin-left: 8px; margin-top: 1px;"><i class="fa fa-user"></i></div>
+                        </a>
+                        <a ng-if="!communityService.community" ng-href="/profile" title="Profile" class="pointer"><i class="fa fa-user"></i></a>
+                    </li>
+                    <li ng-if="isLoggedIn" class="divider-vertical"></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li ng-if="!isLoggedIn" class="menu-button navbar-right"><button ng-click="go('login')" class="btn btn-default navbar-btn input-xs header-button" style="margin-right: 30px;">Login</button></li>
+                    <li id="headerSignUpButton" ng-if="!isLoggedIn" class="menu-button navbar-right"><button ng-click="signUp()" class="btn btn-success navbar-btn input-xs header-button" style="width: 100px;">Join Free</button></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+
+                    <li ng-show="!headerService.options.useMinimalHeader"><universal-search-bar id="universalSearchBar" style="font-size: 14px; margin-top: 2px; margin-left: 0px; width: 0px; max-width: 400px;" class="nav-search-bar universal-search-bar inline-universal-search-bar" ></universal-search-bar></li>
+
+
+                    <li ng-if="!headerService.options.showToolbar && !headerService.options.useMinimalHeader" id="toolbarIconHeader"><a class="pointer" ng-click="toolbarIconClicked()" title="Show Toolbar"><i class="fa fa-server"></i></a></li>
+
+
+                    <li ng-if="isLoggedIn" ng-class="{ active: viewingNotifications, 'has-notifications': notificationCount > 0}" id="notificationsHeader"><a class="pointer" ng-click="showNotifications()" title="Notifications"><i class="glyphicon glyphicon-globe"></i> <div class="notification-number" ng-show="notificationCount > 0">{{notificationCount}}</div></a></li>
+                    <li ng-if="isLoggedIn" ng-class="{ active: isActive('messages'), 'has-notifications': messageCount > 0}"><a class="pointer" href="/messages" title="Messages"><i class="fa fa-envelope-o"></i> <div class="notification-number" ng-show="messageCount > 0">{{messageCount}}</div></a></li>
+                    <li ng-if="isLoggedIn" ng-class="{ active: viewingFriendRequests, 'has-notifications': friendRequestCount > 0}"><a class="pointer" ng-click="showFriendRequests()" title="Friend Requests"><i class="fa fa-users"></i> <div class="notification-number" ng-show="friendRequestCount > 0">{{friendRequestCount}}</div></a></li>
+
+
+                    <li ng-if="isLoggedIn" ng-class="{ active: isActive('settings')}" class="dropdown" dropdown>
+                        <a href class="dropdown-toggle pointer" dropdown-toggle><i class="glyphicon glyphicon-cog"></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li ng-class="{ active: isActive('account-settings')}"><a class="pointer" href="/account-settings" title="Account Settings"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+                            <li ng-class="{ active: isActive('contact')}"><a class="pointer" href="/contact" title="Contact"><i class="glyphicon glyphicon-envelope"></i> Contact Us</a></li>
+                            <li ng-if="isTeacher" ng-class="{ active: isActive('teach')}"><a class="pointer" href="/teach" title="Teach"><i class="fa fa-graduation-cap"></i> Teach</a></li>
+                            <li><a class="pointer" ng-click="logout()" title="Sign Out"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <universal-search-bar ng-if="isPhone && headerService.options.showSearchBar" ng-show="!headerService.options.useMinimalHeader" id="universalSearchBar" class="nav-search-bar universal-search-bar phone-universal-search-bar underneath-phone-header"></universal-search-bar>
+    <div class="clearfix"></div>
+
+    <toolbar ng-show="headerService.options.showToolbar" is-open="headerService.options.isToolbarOpen" show-toolbar="headerService.options.showToolbar"></toolbar>
+
+    <marketing-popup ng-if="!isLoggedIn"></marketing-popup>
+</div>

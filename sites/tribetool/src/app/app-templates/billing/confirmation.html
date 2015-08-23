@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <div class="media">
+            <div class="media-left">
+                <span class="glyphicon glyphicon-user glyphicon-large"></span>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Account Details <button class="btn btn-link" ng-click="goBack(1)">(change)</button></h4>
+                <p class="text-success">
+                    {{account.getType()}} Account Access<br />
+                    Term: 1 Quarter (3 Months)
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="media">
+            <div class="media-left">
+                <span class="glyphicon glyphicon-credit-card glyphicon-large"></span>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Payment Details <button class="btn btn-link" ng-click="goBack(2)">(change)</button></h4>
+                <p ng-if="instrument.paymentInstrumentType == 1" class="clearfix">
+                    <img class="pull-left credit-card" tc-payment-card="{{instrument.cardBrand}}">
+                    <span class="pull-left text-success">{{instrument.cardBrand}} ending in {{instrument.cardMask}}</span>
+                    <span class="pull-right text-success">{{instrument.label}}</span>
+                </p>
+                <p ng-if="instrument.paymentInstrumentType == 2" class="clearfix">
+                    <span class="pull-left text-success">Account ending in {{instrument.bankMask}}</span>
+                    <span class="pull-right text-success">{{instrument.label}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3 class="text-center">Order Summary</h3>
+                <hr />
+                <p class="clearfix">
+                    <span class="pull-left">Services:</span>
+                    <span class="pull-right text-danger">{{payment.amount | currency}}</span>
+                </p>
+                <hr />
+                <p class="clearfix">
+                    <span class="pull-left">Total before tax:</span>
+                    <span class="pull-right text-danger">{{payment.amount | currency}}</span>
+                </p>
+                <p class="clearfix">
+                    <span class="pull-left">Estimated tax:</span>
+                    <span class="pull-right text-success">$0</span>
+                </p>
+                <hr />
+                <p class="clearfix">
+                    <span class="pull-left text-danger fs-xlg"><strong>Total: </strong></span>
+                    <span class="pull-right text-danger fs-xlg"><strong>{{payment.amount | currency}}</strong></span>
+                </p>
+                <button ng-click="confirm()" type="button" class="btn btn-success btn-lg btn-block">Complete</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

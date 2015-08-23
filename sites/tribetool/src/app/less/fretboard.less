@@ -1,0 +1,14 @@
+
+/* The 'tool' directive renders a textarea to enter chords which we don't need when a fretboard is present */
+.fretboard-section textarea {
+  display: none;
+}
+
+.fretboard-section .unclick-btn {
+  margin: 10px;
+}
+
+.fretboard-section .form-group > div {
+  margin-bottom: 2px;
+  text-align: center !important; /* The tool directive is forcing some text to the left which doesn't look right when no textarea is present */
+}

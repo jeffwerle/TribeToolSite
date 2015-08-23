@@ -1,0 +1,50 @@
+<div class="col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Name</div>
+        <div class="panel-body">
+
+            <form name="basicInfoForm" ng-submit="updateName()">
+
+                <label>First Name <span class="required-star">*</span></label>
+                <input style="margin-bottom: 20px;" required="true" class="form-control" placeholder="First Name" ng-model="form.FirstName" type="text">
+
+                <label>Last Name <span class="required-star">*</span></label>
+                <input class="form-control" placeholder="Last Name" ng-model="form.LastName" type="text" required>
+
+                <div ng-show="!processingName">
+                    <button style="margin-top: 20px;" type="submit" class="btn btn-primary pull-right">Update Name</button>
+                </div>
+                <div ng-show="processingName">
+                    <loading class="pull-right"></loading>
+                </div>
+                <div style="color: red;" ng-show="nameError">{{nameError}}</div>
+                <div style="color: green;" ng-show="nameSuccess">{{nameSuccess}}</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-offset-1 col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Password</div>
+        <div class="panel-body">
+            <form name="passwordForm" ng-submit="changePassword()">
+                <label>Old Password <span class="required-star">*</span></label>
+                <div class="input-group margin-bottom-sm"  style="margin-bottom: 20px;">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><input required="true" class="form-control" placeholder="Old Password" ng-model="form.OldPassword" type="password">
+                </div>
+
+                <password-entry options="passwordOptions" password="form.NewPassword" password2="form.NewPasswordConfirmed"></password-entry>
+
+                <div ng-show="!processingPassword">
+                    <button style="margin-top: 20px;" class="btn btn-primary pull-right">Change Password</button>
+                </div>
+                <div ng-show="processingPassword">
+                    <loading class="pull-right"></loading>
+                </div>
+                <div style="color: red;" ng-show="passwordError">{{passwordError}}</div>
+                <div style="color: green;" ng-show="passwordSuccess">{{passwordSuccess}}</div>
+            </form>
+        </div>
+    </div>
+</div>

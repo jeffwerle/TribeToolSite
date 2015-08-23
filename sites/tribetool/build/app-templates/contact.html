@@ -1,0 +1,58 @@
+<div class="form-group" >
+    <div class="col-sm-offset-3 col-sm-6">
+        <div class="text-center" ng-show="!emailSent">
+            <h2>Contact</h2>
+            <p>Are you interested in {{communityName}}? Or do you have a feature request or a bug to report? We'd love to hear from you! Please fill out the below form.</p>
+            <div style="clear:both;">
+                Or do it the ol' fashioned way and e-mail us directly at:
+                <a href="mailto:{{communityEmailAddress}}">{{communityEmailAddress}}</a>
+            </div>
+        </div>
+        <form name="contactForm" ng-submit="submit()" ng-show="!processingForm && !emailSent" style="margin-top: 20px;">
+            <div>
+                <label>Your Name*</label>
+                <input class="form-control" placeholder="Name" required ng-model="contactInfo.name" type="text">
+            </div>
+            <div>
+                <label>Your E-mail Address*</label>
+                <input class="form-control" placeholder="E-mail Address" required ng-model="contactInfo.email" type="email">
+            </div>
+            <div>
+                <label>Your Comments / Suggestions / Requests / Bug Reports*</label>
+                <textarea style="height: 100px;" placeholder="Your Comments / Suggestions / Requests / Bug Reports" class="form-control" required ng-model="contactInfo.content" ></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary pull-right" style="margin-right: 20px; margin-top: 20px;">Submit</button>
+            </div>
+        </form>
+
+
+        <div class="text-center" style="clear:both;">
+
+            <div ng-show="processingForm">
+                <h3>The hamsters are working! Please wait...</h3>
+                <div>
+                    <img src="images/ajax-loader.gif" alt="Please Wait...">
+                </div>
+            </div>
+
+            <div ng-show="emailSent">
+                <h2><i class="glyphicon glyphicon-ok-sign"></i> E-mail Sent Successfully</h2>
+                <h4>We'll get back to you just as soon as we can!</h4>
+                <p>Til then, check out a <a href="/community">Community</a>.</p>
+            </div>
+
+            <div ng-show="emailFailure">
+                <h2><i class="glyphicon glyphicon-exclamation-sign"></i> E-mail Failure</h2>
+                <h4>Something seems to have gone horribly wrong!</h4>
+                <p>Details "{{response.ErrorReason}}"</p>
+                <p>
+                    Try again or e-mail us directly at:
+                    <a href="mailto:{{communityEmailAddress}}">{{communityEmailAddress}}</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

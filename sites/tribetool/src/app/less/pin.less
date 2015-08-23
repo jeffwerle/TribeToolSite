@@ -1,0 +1,51 @@
+.pin-creation-date {
+  .post-submitted-by-text();
+}
+
+.pin-well {
+  .white-well;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+}
+
+@pinIconContainerHeight: 20px;
+.pin-icon-container {
+
+  right: 0px;
+  &.has-more-options {
+    right: 20px;
+  }
+
+  position: absolute;
+  top: 5px;
+  margin-right: 10px;
+  z-index: 1;
+  height: @pinIconContainerHeight;
+
+  .unpinning-options {
+    background-color: white;
+  }
+}
+
+
+.pin-icon-button {
+  .centered;
+  .pointer;
+  height: @pinIconContainerHeight;
+
+  .toolbar-button-hoverable
+}
+
+.pin-icon-button-pinned {
+  .pin-icon-button;
+  .pointer;
+  height: @pinIconContainerHeight;
+
+  color: #00b54e;
+
+  &:hover {
+
+    //.text-primary;
+    .btn-warning;
+  }
+}

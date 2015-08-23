@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="metaController">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+
+    <!-- cordova script -->
+    <script src="cordova.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/app.min.css"/>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit" async defer></script>
+
+
+</head>
+
+
+<body ng-controller="appController" class="platform-ios platform-cordova platform-webview">
+
+    <div ng-controller="navigationController">
+        <div ng-controller="communityController">
+            <div id="fb-root"></div>
+            <div ng-init="productionInitialized(true)"></div>
+
+            <index-content></index-content>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="all.min.js"></script>
+</body>
+
+
+</html>

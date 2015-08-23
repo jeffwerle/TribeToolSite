@@ -1,0 +1,56 @@
+<div>
+    <h1 class="centered">{{fullName}}'s Teaching Dashboard</h1>
+
+    <div class="col-md-12" style="margin-top: 20px;">
+        <div class="row" >
+            <div class="col-sm-6">
+                <div class="well">
+                    <h4>Students</h4>
+                    <div ng-repeat="student in students">
+                        <comment-picture account="student.Account" votable="student" show-only-picture="true" suppress-progress="true" options="studentPictureOptions"></comment-picture>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+
+                <section>
+                    <div class="well centered">
+                        <h4>Upcoming Lessons</h4>
+                        <div ng-if="upcomingAppointmentsReady">
+                            <div ng-if="upcomingAppointments && upcomingAppointments.length > 0">
+                                <div ng-repeat="appointment in upcomingAppointments">
+                                    <comment-picture account="appointment.student.Account" votable="appointment.student" show-only-picture="true" suppress-progress="true" options="studentPictureOptions"></comment-picture>
+                                    <div>
+                                        Lesson with {{appointment.student.Account.FirstName}} at {{appointment.Date | dateRobust:'MM/dd/yyyy @ h:mma'}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div ng-if="!upcomingAppointments || upcomingAppointments.length <= 0">
+                                <div>You have no upcoming appointments.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section style="margin-top: 20px;">
+                    <div class="well centered" ng-if="!modifyingSchedule">
+                        <h4>Your Schedule</h4>
+                        <schedule schedule="schedule" options="scheduleOptions" schedule-mode="'View'"></schedule>
+                    </div>
+                </section>
+
+                <section style="margin-top: 20px;">
+                    <div ng-show="!modifyingSchedule">
+                        <button class="btn btn-primary pull-right" ng-click="modifyingSchedule = true">Modify Availability</button>
+                    </div>
+
+                    <div class="well" ng-if="modifyingSchedule">
+                        <schedule schedule="schedule" options="scheduleOptions" schedule-mode="'SetAvailability'"></schedule>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</div>

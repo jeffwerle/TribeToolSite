@@ -1,0 +1,6 @@
+.music-theory-logo {
+  background-image: url('/sites/musictheorynotes/images/Music-Theory-Notes-Menu.png');
+}
+.music-theory-logo:hover {
+  background-image: url('/sites/musictheorynotes/images/Music-Theory-Notes-Menu-Highlighted.png');
+}

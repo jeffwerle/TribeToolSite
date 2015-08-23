@@ -1,0 +1,215 @@
+@commentInputProfilePictureHeight: 40px;
+
+
+.comment-replies {
+  margin-left: 5px;
+}
+
+.content-editor-input-container {
+  &.list.card {
+    margin-top:0px;
+  }
+
+
+  .row {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+
+    .content-editor-input {
+      padding: 0px;
+    }
+
+    .col {
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      textarea {
+        white-space: normal;
+      }
+    }
+
+    .comment-profile-picture {
+      height: 40px;
+      width: 40px;
+    }
+
+    .comment-profile-picture-container.progress-radial {
+      width: @commentInputProfilePictureHeight + 7;
+      height: @commentInputProfilePictureHeight + 7;
+      padding-top: 3px;
+      border-radius: 10%;
+
+      .profile-picture-level-progress {
+
+        width: @commentInputProfilePictureHeight;
+
+        .profile-picture-level {
+          font-size: 6px;
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
+
+@commentEntryHeaderFontSize: 13px;
+@commentEntryHeaderSpriteZoom: 0.13;
+
+@commentItemAvatarRowHeight: 47px;
+.status-entry {
+  .comment-entry {
+    .list.card {
+      > .item-avatar {
+        > .row {
+          height: @commentItemAvatarRowHeight;
+        }
+      }
+    }
+  }
+}
+
+@commentIconHeight: 28px;
+@commentOpenMenuIconHeight: 43px;
+.comment-entry {
+
+  .list.card {
+    margin-top: 5px;
+
+
+
+    > .item-avatar {
+      min-height: 0px;
+      padding-bottom: 0px;
+
+      .comment-profile-picture-container {
+        .comment-profile-picture {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+
+        > .row {
+        height: @commentItemAvatarRowHeight;
+        padding-bottom: 0px;
+
+        .comment-entry-picture-container {
+          padding-right: 5px;
+        }
+
+        div.comment-reply-icon-container {
+          text-align: center;
+          padding-top: 0px;
+          padding-right: 10px;
+
+          .comment-reply-icon {
+          }
+          .comment-reply-level {
+            font-size: 9px;
+          }
+        }
+
+
+        .col {
+          padding-bottom: 0px;
+
+
+          p {
+            margin-bottom: 0px;
+            font-size: @commentEntryHeaderFontSize;
+
+            &.info-text {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+
+      .inline.emotion-button {
+        width: @commentEntryHeaderFontSize;
+        height: @commentEntryHeaderFontSize;
+        background-size: @commentEntryHeaderFontSize;
+
+        .emotion-sprite {
+          zoom: @commentEntryHeaderSpriteZoom;
+          -moz-transform: scale(@commentEntryHeaderSpriteZoom);
+        }
+      }
+    }
+
+    .item.tabs {
+      height: @commentIconHeight;
+      line-height: @commentIconHeight;
+      .tab-item {
+          .circle-menu {
+            > .circle-menu-btn {
+              .emotion-icon.emotion-button {
+                width: 22px;
+                height: 22px;
+                background-size: 22px;
+
+                .emotion-sprite {
+                  zoom: 0.22;
+                  -moz-transform: scale(0.22);
+                }
+
+              }
+            }
+
+            > .icons {
+              .circle-menu-btn {
+                min-width: @commentOpenMenuIconHeight;
+                min-height: @commentOpenMenuIconHeight;
+                .emotion-icon {
+                  width: @commentOpenMenuIconHeight;
+                  height: @commentOpenMenuIconHeight;
+                  background-size: @commentOpenMenuIconHeight;
+                  .emotion-sprite {
+                    zoom: 0.43;
+                    -moz-transform: scale(0.43);
+                  }
+                }
+              }
+            }
+          }
+
+          i {
+            height: @commentIconHeight;
+            font-size: @commentIconHeight;
+          }
+          i:before {
+            font-size: 16px;
+            line-height: @commentIconHeight;
+          }
+      }
+    }
+
+    .item.item-body {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .col {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+    }
+  }
+
+
+  p {
+    margin-top: 0px;
+  }
+
+}

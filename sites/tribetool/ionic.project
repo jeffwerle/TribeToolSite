@@ -1,0 +1,20 @@
+{
+  "name": "TribeTool",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/TribeToolService",
+      "proxyUrl": "https://tribetool.com:8443/TribeToolService"
+    }
+  ],
+  "watchPatterns": [
+    "!www/**"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
+}

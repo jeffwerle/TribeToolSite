@@ -1,0 +1,455 @@
+@emotionIconWidth: 25px;
+
+@emotionAmusedColor: #daa520;
+@emotionExcitedColor: #ff6600;// #387ef5;//#ff6600;
+@emotionSadColor: #008080;//#ce2bf1;//#3953a4;
+@emotionUnamusedColor: #bd6123;//#ce2bf1;
+@emotionAngryColor: #ff0000;
+@emotionSurprisedColor: #800080; //#17FA89
+
+@emotionBorderWidth: 2px;
+
+.emotion-none-glow  {
+  border-left: @emotionBorderWidth solid grey !important;
+}
+
+.emotion-icon {
+  width: @emotionIconWidth;
+  transition: transform 0.3s ease;
+}
+
+.emotion-icon.disabled {
+  transition: none;
+}
+.emotion-icon.disabled:hover {
+  transform: none;
+}
+
+.emotion-vote-mechanism {
+
+  .emotion-button {
+    i {
+      font-size: 30px;
+    }
+  }
+  > div {
+    float: left;
+  }
+
+}
+
+.emotion-icon-number {
+  width: @emotionIconWidth;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.emotion-icon-number.hoverable {
+  .pointer;
+}
+.emotion-icon-number.hoverable:hover {
+  //transform: scale(1.25);
+}
+
+.emotion-icon-no-hover {
+  .emotion-icon;
+  display: inline-block;
+}
+
+.emotion-icon:hover {
+  //transform: scale(1.25);
+}
+
+.emotion-amused-border-color {
+  border-color: @emotionAmusedColor;
+}
+.emotion-amused-color {
+  color: @emotionAmusedColor;
+}
+.emotion-amused-glow {
+  border-left: @emotionBorderWidth solid @emotionAmusedColor !important;
+}
+.emotion-amused.selected {
+  -moz-box-shadow: 0 0 5px @emotionAmusedColor;
+  -webkit-box-shadow: 0 0 5px @emotionAmusedColor;
+  box-shadow: 0px 0px 5px @emotionAmusedColor;
+}
+
+.emotion-excited-border-color {
+  border-color: @emotionExcitedColor;
+}
+.emotion-excited-color {
+  color: @emotionExcitedColor;
+}
+.emotion-excited-glow {
+  border-left: @emotionBorderWidth solid @emotionExcitedColor !important;
+}
+
+.emotion-excited.selected {
+  -moz-box-shadow: 0 0 5px @emotionExcitedColor;
+  -webkit-box-shadow: 0 0 5px @emotionExcitedColor;
+  box-shadow: 0px 0px 5px @emotionExcitedColor ;
+}
+
+.emotion-sad-border-color {
+  border-color: @emotionSadColor;
+}
+.emotion-sad-color {
+  color: @emotionSadColor;
+}
+.emotion-sad-glow {
+  border-left: @emotionBorderWidth solid @emotionSadColor !important;
+}
+.emotion-sad.selected {
+  -moz-box-shadow: 0 0 5px @emotionSadColor;
+  -webkit-box-shadow: 0 0 5px @emotionSadColor;
+  box-shadow: 0px 0px 5px @emotionSadColor;
+}
+
+.emotion-unamused-border-color {
+  border-color: @emotionUnamusedColor;
+}
+.emotion-unamused-color {
+  color: @emotionUnamusedColor;
+}
+.emotion-unamused-glow {
+  border-left: @emotionBorderWidth solid @emotionUnamusedColor !important;
+}
+.emotion-unamused.selected {
+  -moz-box-shadow: 0 0 5px @emotionUnamusedColor;
+  -webkit-box-shadow: 0 0 5px @emotionUnamusedColor;
+  box-shadow: 0px 0px 5px @emotionUnamusedColor;
+}
+
+.emotion-angry-border-color {
+  border-color: @emotionAngryColor;
+}
+.emotion-angry-color {
+  color: @emotionAngryColor;
+}
+.emotion-angry-glow  {
+  border-left: @emotionBorderWidth solid @emotionAngryColor !important;
+}
+
+.emotion-angry.selected {
+  -moz-box-shadow: 0 0 5px @emotionAngryColor;
+  -webkit-box-shadow: 0 0 5px @emotionAngryColor;
+  box-shadow: 0px 0px 5px @emotionAngryColor;
+}
+
+
+.emotion-surprised-border-color {
+  border-color: @emotionSurprisedColor;
+}
+.emotion-surprised-color {
+  color: @emotionSurprisedColor;
+}
+.emotion-surprised-glow {
+  border-left: @emotionBorderWidth solid @emotionSurprisedColor !important;
+}
+.emotion-surprised.selected {
+  -moz-box-shadow: 0 0 5px @emotionSurprisedColor;
+  -webkit-box-shadow: 0 0 5px @emotionSurprisedColor;
+  box-shadow: 0px 0px 5px @emotionSurprisedColor;
+}
+
+
+
+
+.circle-menu .circle-menu-btn .image.emotion-button{
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+
+  .emotion-sprite {
+    zoom:0.30;
+    -moz-transform:scale(0.30);
+    -moz-transform-origin: 0 0;
+  }
+}
+.circle-menu .circle-menu-btn .image.emotion-button.emotion-choice{
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  .emotion-sprite {
+    zoom:0.50;
+    -moz-transform:scale(0.50);
+    -moz-transform-origin: 0 0;
+  }
+}
+
+@emotionInlineSize: 14px;
+@emotionInlineZoom: 0.14;
+
+.inline.emotion-icon-no-hover {
+  zoom:@emotionInlineZoom;
+  -moz-transform:scale(@emotionInlineZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.inline.emotion-button{
+  display:inline-block;
+  width: @emotionInlineSize;
+  height: @emotionInlineSize;
+  background-size: @emotionInlineSize;
+
+  .emotion-sprite {
+    zoom:@emotionInlineZoom;
+    -moz-transform:scale(@emotionInlineZoom);
+    -moz-transform-origin: 0 0;
+  }
+}
+
+
+.tab-item.emotion-vote-mechanism-container {
+  opacity: 1;
+}
+
+.emotion-vote-mechanism .inactive,
+.emotion-vote-mechanism .inactive.active{
+  opacity: .7;
+}
+.emotion-vote-mechanism .active {
+  opacity: 1;
+}
+
+.emotion-vote-mechanism .circle-menu {
+  position: absolute;
+  width: 50px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.emotion-sprite {
+  background-image: url('../images/emoticons/emoticons-large.png');
+  background-repeat: no-repeat;
+  //display: block;
+}
+
+.emotion-sprite-amused {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -5px -5px;
+}
+
+.emotion-sprite-amused-blue {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -115px -5px;
+}
+
+.emotion-sprite-amused-grey {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -225px -5px;
+}
+
+.emotion-sprite-angry {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -5px -115px;
+}
+
+.emotion-sprite-excited {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -115px -115px;
+}
+
+.emotion-sprite-excited-blue {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -225px -115px;
+}
+
+.emotion-sprite-love {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -5px -225px;
+}
+
+.emotion-sprite-sad {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -115px -225px;
+}
+
+.emotion-sprite-sad-green {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -225px -225px;
+}
+
+.emotion-sprite-sad-purple {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -335px -5px;
+}
+
+.emotion-sprite-silly {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -335px -115px;
+}
+
+.emotion-sprite-surprised {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -335px -225px;
+}
+
+.emotion-sprite-unamused {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -5px -335px;
+}
+
+.emotion-sprite-unamused-brown {
+  .emotion-sprite;
+  width: 100px;
+  height: 100px;
+  background-position: -115px -335px;
+}
+
+
+
+
+
+
+
+@emotionSpriteSmallZoom: 0.25;
+
+.emotion-sprite-small-amused {
+  .emotion-sprite-amused;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-amused-blue {
+  .emotion-sprite-amused-blue;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-amused-grey {
+  .emotion-sprite-amused-grey;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-angry {
+  .emotion-sprite-angry;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-excited {
+  .emotion-sprite-excited;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-excited-blue {
+  .emotion-sprite-excited-blue;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-love {
+  .emotion-sprite-love;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-sad {
+  .emotion-sprite-sad;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-sad-green {
+  .emotion-sprite-sad-green;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-sad-purple {
+  .emotion-sprite-sad-purple;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-silly {
+  .emotion-sprite-silly;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-surprised {
+  .emotion-sprite-surprised;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-unamused {
+  .emotion-sprite-unamused;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+.emotion-sprite-small-unamused-brown {
+  .emotion-sprite-unamused-brown;
+  zoom: @emotionSpriteSmallZoom;
+  -moz-transform:scale(@emotionSpriteSmallZoom);
+  -moz-transform-origin: 0 0;
+}
+
+
+
+
+.interaction-summary {
+  .emotion-icon-no-hover {
+    zoom: 0.15;
+    -moz-transform:scale(0.15);
+  }
+}

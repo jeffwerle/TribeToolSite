@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-nav-title></ion-nav-title>
+    <ion-content class="has-header has-subheader">
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                spinner="android"
+                on-refresh="refreshView()">
+        </ion-refresher>
+        <div ng-controller="communityViewController">
+
+            <!-- Only load the index file path after we've initialized the community -->
+            <div ng-if="hasCommunityUrl && communityService.communityOptions && communityService.communityOptions.indexFilePath">
+                <div id="communityIndexFilePathRoot" ng-include="communityService.communityOptions.indexFilePath"></div>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="onInfiniteScroll()" icon="ion-loading-c" distance="10%">
+        </ion-infinite-scroll>
+    </ion-content>
+
+</ion-view>
+

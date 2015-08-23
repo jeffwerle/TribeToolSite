@@ -1,0 +1,47 @@
+
+<div class="text-center center-block">
+
+    <div>
+        <h1>Bazzle!</h1>
+        <h3 style="margin-top: 0px;">Music Theory Search Engine</h3>
+    </div>
+    <div class="row text-center center-block">
+
+
+        <div class="form-group col-sm-offset-3 col-sm-6">
+            <form class="input-group" ng-submit="execute()">
+                <input type="text" id="search_bar" name="search_bar" class="form-control" ng-model="form.command">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </form>
+            <div class="col-sm-offset-1 col-sm-10  row">
+                <dmusiclibrary-edit-instrument-dropdown blue-button="true"></dmusiclibrary-edit-instrument-dropdown>
+            </div>
+            <div style="clear: both;"></div>
+
+
+            <div>
+                <img ng-show="showLoading" src="images/ajax-loader.gif" alt="Please Wait...">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div ng-if="OPTIONS.isDebug && excludedFormulas">
+        Excluded Formulas:
+        <ul ng-repeat="excludedFormula in excludedFormulas">
+            <li>{{excludedFormula}}</li>
+        </ul>
+    </div>
+
+    <dmusiclibrary-results-panel results="results" go-to-bazzle="goToBazzle"></dmusiclibrary-results-panel>
+
+
+
+    <div style="margin-top: 20px;">
+        <button class="btn" ng-click="goToTools()">Browse Tools</button>
+    </div>
+
+</div>

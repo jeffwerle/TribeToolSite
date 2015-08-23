@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Test Chord Grid Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../../src/app/styles/chord-grid.css">
+</head>
+
+<body ng-app="myApp">
+    <style>
+        .body {
+            margin: 0;
+        }
+    </style>
+
+    <div ng-controller="MyController">
+        <h1>Timing: {{chordGridOptions.timingNumerator}} / {{chordGridOptions.timingDenominator}}</h1>
+        <button ng-click='changeChords()'>Change chords</button>
+        <div chord-grid chord-grid-options="chordGridOptions" chords="chords" progression="progression"></div>
+    </div>
+
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <!-- allows drag to happen with jQuery UI on touch devices  -->
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    <script src="angular.js"></script>
+
+    <script src='safeApply.js'></script>
+    <script src='sortable.js'></script>
+    <script src='../../../src/app/directives/virtual-cowriter/chord-progressions/chord-grid.js'></script>
+
+    <script type="text/javascript">
+        var app = angular.module("myApp", ['chordGrid']);
+
+        app.controller("MyController", ["$scope", "$timeout", function($scope, $timeout) {
+            // The chordGrid directive will set these widths to be one measure
+            // since we have not defined units, and will data-bind the units to
+            // these objects
+            var chords = [{
+                name: "Ab",
+                color: "blue"
+            }, {
+                name: "A",
+                color: "red"
+            }, {
+                name: "Bb",
+                color: "green"
+            }, {
+                name: "B",
+                color: "orange"
+            }, {
+                name: "C",
+                color: "yellow"
+            }, {
+                name: "C#",
+                color: "purple"
+            }, {
+                name: "D",
+                color: "lightblue"
+            }, {
+                name: "Eb",
+                color: "tan"
+            }, {
+                name: "E",
+                color: "brown"
+            }, {
+                name: "F",
+                color: "pink"
+            }, {
+                name: "F#",
+                color: "LightSeaGreen"
+            }, {
+                name: "G",
+                color: "LawnGreen"
+            }];
+
+            // To test that changing a chord's units will result in chord size changing
+            /*$timeout(function() {
+            	$scope.progression[0].units = 1028;
+            },6000);*/
+
+            $scope.chordsChanged = false;
+
+            $scope.changeChords = function() {
+                if ($scope.chordsChanged) {
+                    angular.forEach($scope.chords, function(chord, index) {
+                        chord.name = chord.name.replace("7", "");
+                    });
+                } else {
+                    angular.forEach($scope.chords, function(chord, index) {
+                        chord.name += "7";
+                    });
+                }
+
+                $scope.chordsChanged = !$scope.chordsChanged;
+            }
+
+            // The chords the user can choose from to make a progression
+            $scope.chords = $.extend(true, [], chords);
+
+            // The progression in progress
+            $scope.progression = [];
+
+            $scope.$watch(function() {
+                return $scope.progression;
+            }, function(newVal, oldVal) {
+                console.log($scope.progression);
+            }, true);
+
+            $(window).on("resize", function() {
+                console.log($scope.progression);
+            });
+
+            $scope.chordGridOptions = {
+                timingNumerator: 3,
+                timingDenominator: 4,
+                unitsPerQuarterNote: 128,
+                snapThreshold: 0.1,
+                clickCallback: function(chordInProgression) {
+                    console.log(chordInProgression);
+                }
+            }
+        }]);
+    </script>
+</body>
+
+</html>

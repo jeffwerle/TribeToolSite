@@ -1,0 +1,208 @@
+.schedule .day-of-week-row {
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  height: 36px;
+  line-height: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+.schedule .schedule-calendar {
+  background: #fff;
+  border: 1px solid #c6c6c6;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.schedule-key {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+
+.schedule-key>span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  //width: 33%;
+}
+.schedule-key>span>span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  //max-width: 33%;
+  //max-width: calc(33% - 5px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.schedule-key>span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  //width: 33%;
+  margin-right: 10px;
+}
+
+.schedule .day-of-week-row>span:first-of-type {
+  margin-left: 12%;
+}
+
+.schedule .day-of-week-row>span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  color: #777;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  font-weight: bold;
+  text-align: center;
+  width: 12%;
+}
+
+
+.schedule .time-column {
+  background: #fafafa;
+  color: #757575;
+  font-size: 12px;
+  width: 16%;
+}
+
+.schedule .time-column, .schedule .day-of-week-column {
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  width: 12%;
+}
+
+.schedule .time-column, .schedule .day-of-week-column {
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  width: 12%;
+}
+
+.schedule .time-column>div {
+  height: 24px;
+  line-height: 22px;
+}
+.schedule .time-column>div:hover {
+  background-color: lightgrey;
+}
+
+
+.schedule .time-column > div, .schedule .day-of-week-column>div {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 8px;
+  vertical-align: middle;
+}
+
+.schedule .day-of-week-column>div {
+  height: 12px;
+  line-height: 11px;
+}
+
+.schedule .time-column > div, .schedule .day-of-week-column>div {
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 8px;
+  vertical-align: middle;
+}
+
+.schedule .day-of-week-column>div.free-slot {
+  background: #dbeed2;
+  border-bottom: 1px solid #afbea7;
+}
+.schedule .day-of-week-column>div.free-slot:hover {
+  background-color: #CDEEC2;
+}
+
+.schedule .day-of-week-column>div.booked-slot {
+  background: #cd5c5c;
+  border-bottom: 1px solid #afbea7;
+}
+.schedule .day-of-week-column>div.booked-slot:hover {
+  background-color: red;
+}
+
+.schedule-key .free-slot-swatch,
+.schedule-key .unfree-slot-swatch,
+.schedule-key .booked-slot-swatch,{
+  background: #fff;
+  border: 1px solid #ccc;
+  height: 20px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.schedule-key .booked-slot-swatch {
+  background: #cd5c5c;
+}
+
+.schedule-key .free-slot-swatch {
+  background: #dbeed2;
+}
+
+
+
+.schedule-slot {
+
+}
+.schedule-slot:hover {
+  background-color: lightGrey;
+}

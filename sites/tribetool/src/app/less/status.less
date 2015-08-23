@@ -1,0 +1,106 @@
+
+.status-well {
+  .comment-well;
+}
+
+.status-container {
+  .post-summary-container;
+  margin-bottom: 3px;
+}
+
+
+//.stream-page .status-input,
+.status-comment-container{
+  margin-left: @alignWithContentForLeftProfilePicture;
+}
+
+
+
+.status-input-well {
+  .status-well;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+
+.status-comment-well {
+  .bordered-well;
+
+  background-color: @statusCommentWellBackgroundColor !important;
+
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  //box-shadow: @well-box-shadow;
+  .dark-border;
+}
+
+.status-tag-container {
+  .post-summary-tag-container;
+}
+
+.status-picture-container {
+  .post-summary-picture-container;
+}
+
+.status-input-content {
+  .comment-input-content;
+}
+
+
+.stream-page .status-entry {
+  @media (min-width: 768px) {
+    margin-left: @leftMarginForLeftProfilePicture;
+  }
+  .status-header-content {
+
+  }
+}
+
+.status-entry {
+  .status-content-container {
+    .post-summary-content-container;
+    .dark-border-bottom;
+
+    .status-header {
+      // On mobile the comment picture will be inline so set the line height
+      @media (max-width: 767px) {
+        line-height: 50px;
+      }
+
+      padding-top: 7px;
+      padding-bottom: 6px;
+      margin-bottom: 5px;
+      background-color: @controlAreaBackgroundColor;
+
+      .profile-name {
+        font-size: 15px;
+        .profile-name-format;
+      }
+    }
+  }
+}
+
+.status-control-area {
+  .post-summary-control-area;
+  padding: 2px;
+}
+
+.status-content {
+  .post-summary-content;
+}
+
+.status-entry {
+  margin-top: 10px;
+
+  .tag-picture {
+    height: 30px;
+  }
+
+
+  .comment-profile-picture {
+    border-radius: 50%;
+  }
+}

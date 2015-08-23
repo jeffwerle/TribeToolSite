@@ -1,0 +1,215 @@
+@headerNavBarHeight: 35px;
+
+#header {
+  padding-top: @headerNavBarHeight;
+}
+
+.header-community-logo {
+  background-size: 159px 20px;
+  width: 159px;
+  height: 20px;
+}
+
+// NAVBAR
+// -------------------
+.navbar .divider-vertical {
+  height: 50px;
+  //margin: 0 9px;
+  border-right: 1.2px solid @brand-color-divider-light;//#127CB3;//#5B78B6;//#ffffff; // brighter
+  border-left: 1.2px solid @brand-color-divider-dark;//#486091;//#E8E8E8; // darker
+}
+#c5ebff
+
+.navbar-inverse .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.navbar-nav > li > a {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-size: 16px;
+
+  height: @headerNavBarHeight;
+}
+
+.navbar-nav > li > a > i {
+  padding-top: 2px;
+}
+
+.navbar li.divider-vertical {
+  height: @headerNavBarHeight;
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+.universal-search-bar-input {
+  .input-xs;
+  border: 0px;
+}
+
+.navbar {
+  min-height: 0px;
+}
+
+.header-button {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 7px;
+  margin-bottom: 0px;
+}
+
+
+
+
+/*
+@bgDefault      : #4e69a2;
+@bgHighlight    : #5f84d4;
+@colDefault     : #C5D8FF;//#ecf0f1;
+*/
+
+@bgDefault      : @brand-color;
+@bgHighlight    : @brand-color-highlight;//#3796c7;
+@colDefault     : @brand-color-icon;//#ecf0f1;
+@colHighlight   : #ffffff;
+
+
+@brandDefault: @colDefault;//@colDefault;
+@brandHighlight: @colHighlight;
+@dropDown       : true;
+.ddm() when (@dropDown) {
+  > .dropdown-menu {
+    background-color: @bgDefault;
+    > li > a {
+      color: @colDefault;
+      &:hover,  &:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+    .divider {
+      background-color: @bgHighlight;}}}
+.navbar-default {
+  background-color: @bgDefault;
+  border-color: @bgHighlight;
+  .navbar-brand {
+    color: @brandDefault;
+    &:hover, &:focus {
+      color: @brandHighlight; }}
+  .navbar-text {
+    color: @colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: @colDefault;
+        &:hover,  &:focus {
+          color: @colHighlight; }}
+      .ddm }
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight; }}}
+  .navbar-toggle {
+    border-color: @bgHighlight;
+    &:hover, &:focus {
+      background-color: @bgHighlight; }
+    .icon-bar {
+      background-color: @colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @colDefault; }
+  .navbar-link {
+    color: @colDefault;
+    &:hover {
+      color: @colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: @colDefault;
+      &:hover, &:focus {
+        color: @colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: @colHighlight;
+        background-color: @bgHighlight;
+      }
+    }
+  }
+}
+
+.navbar-header .dropdown-menu {
+  background-color: @bgDefault;
+}
+.navbar-header.open .dropdown-menu {
+  > li > a {
+    color: @colDefault;
+    background-color: @bgDefault;
+    &:hover, &:focus {
+      color: @colHighlight; }}
+  > .active {
+    > a, > a:hover, > a:focus {
+      color: @colHighlight;
+      background-color: @bgHighlight;
+    }
+  }
+}
+
+.navbar.sub-navbar {
+  border-top: 0px;
+}
+
+
+.navbar {
+  border-radius: 0px;
+}
+
+
+
+
+
+a.navbar-mobile-item {
+  .navbar-brand;
+  color: @colDefault;
+}
+button.navbar-mobile-item {
+  margin-top: 15px;
+}
+
+a.navbar-mobile-item:active {
+  color: @bgHighlight;
+}
+
+a.navbar-mobile-item:link,
+a.navbar-mobile-item:visited {
+  color: @colDefault;
+}
+
+a.navbar-mobile-item:hover {
+  color: @colHighlight;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.navbar-mobile-item.active {
+  color: @colHighlight;
+  background-color: @bgHighlight;
+}
+
+.underneath-phone-header {
+  margin-top: @headerNavBarHeight - 20;
+}

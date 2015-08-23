@@ -1,0 +1,23 @@
+<div class="modal-header text-center">
+    <h2 ng-if="setup && progress.step === 1">Account Selection</h2>
+    <h2 ng-if="setup && progress.step === 2">Payment Details</h2>
+    <h2 ng-if="setup && progress.step === 3">Verify Details</h2>
+
+    <h2 ng-if="!setup">Edit Billing Information</h2>
+    <button type="button" class="glyphicon glyphicon-remove btn btn-link" ng-click="close()"></button>
+</div>
+<div id="billing-profile" class="modal-body container">
+
+    <div tc-flash-inline class="alert alert-info container" ng-show="flash != ''" ng-init="flash = ''" ng-cloak>{{flash}}</div>
+
+    <section ng-if="setup">
+        <section ng-if="progress.step === 'ManageSubscriptions'" ng-controller="manageSubscriptionsController" ng-include="'app-templates/billing/manage-subscriptions.html'"></section>
+        <section ng-if="progress.step === 'ProductSelection'" ng-include="'app-templates/billing/product-selection.html'"></section>
+        <section ng-if="progress.step === 'PaymentMethod'" ng-controller="paymentOptionsController" ng-include="'app-templates/billing/payment-options.html'"></section>
+        <section ng-if="progress.step === 'Confirmation'" ng-controller="billingConfirmationController" ng-include="'app-templates/billing/confirmation.html'"></section>
+    </section>
+
+    <section ng-if="!setup">
+
+    </section>
+</div>

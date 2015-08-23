@@ -1,0 +1,38 @@
+<div style="padding: 10px;">
+    <modal-close-button on-cancel="cancel()"></modal-close-button>
+    <a id="loginDialogBox"></a>
+
+
+    <div ng-if="options.stage === 'SignUp'">
+        <h4 class="centered">We think that's a good idea too! <excited-face-animation></excited-face-animation> Sign-up to interact.</h4>
+        <h4 class="centered"><a class="pointer" ng-click="goToLogin()">Already have an account?</a></h4>
+
+        <div class="centered" style="margin-top: 10px;">
+            <social-login-buttons registering="true"></social-login-buttons>
+        </div>
+
+        <div style="margin-top: 10px; width: 80%;" class="sign-up-well centered">
+            <sign-up options="signUpOptions"></sign-up>
+        </div>
+
+        <div class="col-xs-12 clearfix centered">
+            <button ng-show="signUpSuccess" class="btn btn-primary centered" ng-click="signUpSuccessButtonClicked()">Okay</button>
+        </div>
+
+
+    </div>
+    <div ng-if="options.stage === 'Login'">
+        <h4 class="centered">We think that's a good idea too! <excited-face-animation></excited-face-animation> Let's login.</h4>
+        <h4 class="centered"><a class="pointer" ng-click="goToSignUp()">Don't have an account?</a></h4>
+        <div class="centered" style="margin-top: 10px;">
+            <social-login-buttons registering="false"></social-login-buttons>
+        </div>
+
+        <div style="margin-top: 10px; width: 80%;" class="login-well centered">
+            <login options="loginOptions"></login>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+</div>

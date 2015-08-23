@@ -1,0 +1,59 @@
+.vote-count {
+  .centered();
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.vote-count.hoverable {
+  .pointer;
+}
+.vote-count.hoverable:hover {
+  transform: scale(1.25);
+}
+
+.vote-up-container {
+  .centered();
+}
+.vote-down-container {
+  .centered();
+}
+
+.vote-up-img {
+  cursor: pointer;
+  //content: url('../images/Up-Arrow-Grey.png');=
+  color: grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size:22px;
+}
+
+.vote-up-img:hover {
+  color: lightgrey;
+  //content: url('../images/Up-Arrow-Light-Grey.png');
+}
+
+.vote-up-img.voted,
+.vote-up-img.voted:hover{
+  color: lightgreen;
+  //content: url('../images/Up-Arrow-Green.png');
+}
+
+.vote-down-img {
+  cursor: pointer;
+  color: grey;
+  //content: url('../images/Down-Arrow-Grey.png');
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size:22px;
+}
+
+.vote-down-img:hover {
+  color: lightgrey;
+  // content: url('../images/Down-Arrow-Light-Grey.png');
+}
+
+.vote-down-img.voted,
+.vote-down-img.voted:hover{
+  color: darkred;
+  //content: url('../images/Down-Arrow-Red.png');
+}

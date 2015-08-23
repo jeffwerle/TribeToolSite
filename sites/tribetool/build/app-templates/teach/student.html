@@ -1,0 +1,42 @@
+<div>
+    <div class="col-md-12">
+        <div ng-if="student">
+            <h1 class="centered">{{fullName}}'s "{{specializationEntry.Name}}" Progress</h1>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-3">
+                <h4>{{fullName}}</h4>
+                <img class="profile-picture" ng-src="{{profilePictureUrl | trusted}}">
+            </div>
+            <div class="col-sm-9">
+                <div ng-show="!addingLesson">
+                    <button class="btn btn-primary pull-right" ng-click="addingLesson = true">Add Lesson</button>
+                </div>
+
+                <div class="well" ng-if="student && addingLesson">
+                    <h4 class="centered">Add a Lesson that you had with {{fullName}}:</h4>
+                    <submit-student-private-lesson on-cancel="cancelAddingLesson" student="student" specialization-entry="specializationEntry" account-specialization="accountSpecialization"></submit-student-private-lesson>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top: 20px;">
+            <div ng-if="student" class="well">
+                <h2 class="centered">{{fullName}}'s "{{specializationEntry.Name}}" Skill Tree</h2>
+                <perfect-scrollbar class="scroller centered" style="height: 500px;" suppress-scroll-x="true">
+                    <skill-tree specialization-entry="specializationEntry" account-specialization="accountSpecialization"></skill-tree>
+                </perfect-scrollbar>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <div ng-repeat="lesson in lessons" class="well col-sm-6">
+                    <teacher-lesson lesson="lesson"></teacher-lesson>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

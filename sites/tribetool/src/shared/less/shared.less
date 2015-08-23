@@ -1,0 +1,248 @@
+
+.pointer {
+  cursor: pointer;
+}
+
+.ease-transition {
+  transition: all 0.4s ease 0s;
+}
+
+.padded-top {
+  margin-top: 20px;
+}
+
+.no-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.top-fixed {
+  position: fixed;
+  top: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.bottom-right-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.centered {
+  .text-center;
+  margin: auto;
+}
+
+.white-text {
+  color:@white;
+}
+
+.black-text {
+  color:@black;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.clear-both {
+  clear: both;
+}
+
+
+.border-radius(@radius){
+  .border-top-radius(@radius);
+  .border-right-radius(@radius);
+  .border-bottom-radius(@radius);
+  .border-left-radius(@radius);
+}
+
+.bordered {
+  border: @borderPixels solid @borderColor;
+}
+
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+
+.dark-border {
+  border: 1px solid #C3C3C3;
+}
+
+.dark-border-bottom {
+  border-bottom: 1px solid #C3C3C3;
+}
+
+
+
+.right-border {
+  border-right: 1px solid lightgrey !important;
+}
+.left-border {
+  border-left: 1px solid lightgrey !important;
+}
+.top-border {
+  border-top: 1px solid lightgrey !important;
+}
+
+.black-icon {
+  color: black;
+}
+.black-icon:hover {
+  color: grey;
+}
+
+.grey-icon {
+  color: grey;
+}
+.grey-icon:hover {
+  color: black;
+}
+
+.grey-white-icon {
+  color: grey;
+}
+.grey-white-icon:hover {
+  color: white;
+}
+
+.white-icon {
+  color: white;
+}
+.white-icon:hover {
+  color: grey;
+}
+
+
+
+.black-icon-hover-white {
+  color: black;
+}
+.black-icon-hover-white:hover {
+  color: white;
+}
+
+.black-icon-hover-grey {
+  color: black;
+}
+.black-icon-hover-grey:hover {
+  color: grey;
+}
+
+.required-star {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+
+.red-icon {
+  color: red;
+}
+.red-icon:hover {
+  color: black;
+}
+
+.has-context-menu:hover {
+  text-decoration: underline;
+}
+.has-context-menu {
+  color: #428bca;
+  cursor: pointer;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+
+.input-xs {
+  height: 22px;
+  padding: 5px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  //border-radius: 3px;
+}
+
+.control-area {
+  background-color: @controlAreaBackgroundColor;
+  border-top: 1px solid #e9eaed;
+  padding: 7px;
+}
+
+// See http://colinaarts.com/articles/the-magic-of-overflow-hidden/
+.force-fill-width {
+  overflow: hidden;
+}
+
+.info-text-color {
+  //color: #888;
+  color: #555;
+}
+
+.info-text {
+  .info-text-color;
+  font-size: 12px;
+}
+
+// For anchors where we want to show a different color if visited.
+// This class will be added in markdown. See formatterService.updateMarkdownCommunityReferences()
+// where communityService.markdownFormatter is set
+.visitable {
+
+}
+.visitable:visited {
+  color:#551a8b;
+}
+
+.black-glow {
+  box-shadow: 0px 0px 10px #000;
+}
+
+.more-options {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  .centered;
+  z-index: 1;
+
+  .toolbar-button-hoverable
+}

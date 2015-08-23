@@ -1,0 +1,38 @@
+.map-picture {
+  .border-radius(5%);
+  .bordered;
+  height: @commentProfilePictureHeight;
+}
+
+.map-picture-container {
+  padding: 2px;
+}
+
+.map-preview-well {
+  .well;
+  //box-shadow: @well-box-shadow;
+}
+
+.tour-stop {
+  background: lightgrey;
+  border-top: #333333 solid 1px;
+}
+.tour-stop:hover {
+  background: grey;
+}
+
+.tour-stop.selected {
+  color: white;
+  background: @toolbarBlue;
+}
+
+.tour-stop.selected:hover {
+  background: #2d35ff;
+}
+
+.map-highlight-area {
+  z-index: 1050;
+  border: black solid 2px;
+  opacity: .5;
+  background-color: #FFD700;// gold
+}

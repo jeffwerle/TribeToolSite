@@ -1,0 +1,26 @@
+<div ng-controller="footerController">
+
+    <div style="clear:both;"></div>
+
+    <div class="well" style="margin-top: 20px;">
+        <div class="row text-center center-block">
+            <ul class="horizontal footer">
+                <li><a ng-href="{{facebookLink}}"><i class="fa fa-facebook"></i></a></li>
+                <li><a ng-href="{{twitterLink}}"><i class="fa fa-twitter"></i></a></li>
+                <li><a ng-href="{{youtubeLink}}"><i class="fa fa-youtube"></i></a></li>
+                <li ng-if="instagramLink"><a ng-href="{{instagramLink}}"><i class="fa fa-instagram"></i></a></li>
+
+                <li class="last"> <a ng-href="{{googlePlusLink}}"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="row text-center center-block">
+            <ul class="horizontal footer">
+                <li ng-click="go('faq')">FAQ</li>
+                <li ng-click="go('contact')">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+

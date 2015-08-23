@@ -1,0 +1,8 @@
+<div ng-controller="cthemouselandingPostController">
+    <div ng-if="postService.post">
+        <post-page post="postService.post"></post-page>
+    </div>
+    <div ng-show="!postService.post">
+        <loading></loading> Loading Post...
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div>
+    <div ng-init="initialized()" class="landing-page">
+
+
+        <background-video video-id="'N6-2fVsFV8E'" mute="true" start-at="42">
+            <h1>Tribe Tool</h1>
+            <h3 style="margin-top:20px;">{{message}}</h3>
+            <div style="padding-top: 10px;" class="centered">
+                <social-login-buttons-vertical></social-login-buttons-vertical>
+            </div>
+            <div style="padding-top: 10px;" class="centered">
+                <!--<a ng-click="goToRegister()" class="btn btn-call-to-action btn-lg" style="margin-right: 20px;">{{signUpMessage}}</a>-->
+                <a href="/the-mouse-landing" class="btn btn-lg btn-light">View Community</a>
+            </div>
+            <div style="margin-top: 30px;">
+                <div class="col-sm-2"></div>
+                <div class="centered col-sm-8">
+                    <community-search-bar placeholder="searchPlaceholder"></community-search-bar>
+                </div>
+            </div>
+
+        </background-video>
+
+        <div class="centered" ng-repeat="community in accessibleCommunities | excludeRedirectCommunities">
+            <a style="cursor: pointer;" ng-click="communityClicked(community)"><h3>{{community | communityNameWithTopic}}</h3></a>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+

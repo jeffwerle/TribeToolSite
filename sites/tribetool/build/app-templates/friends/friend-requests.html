@@ -1,0 +1,24 @@
+<div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+    <modal-close-button on-cancel="cancel()"></modal-close-button>
+    <div ng-show="loading">
+        <loading></loading> Loading Friend Requests...
+    </div>
+    <div ng-show="!loading && (!friendRequests || friendRequests.length <= 0)">
+        <div>No new Friend Requests received.</div>
+    </div>
+    <div ng-show="!loading && friendRequests && friendRequests.length > 0">
+        <perfect-scrollbar class="scroller" style="height: 300px;" suppress-scroll-x="true">
+            <div ng-repeat="friendRequest in friendRequests">
+                <div style="margin-bottom: 10px;" class="friend-request-well">
+                    <friend-request friend-request="friendRequest" options="friendRequestOptions"></friend-request>
+                </div>
+            </div>
+        </perfect-scrollbar>
+    </div>
+    <div>
+        <button class="btn btn-primary pull-right" style="clear: both; margin-top: 10px; margin-bottom: 10px; margin-right: 20px;" ng-click="cancel()" >Okay</button>
+    </div>
+    <div style="clear:both;"></div>
+
+
+</div>

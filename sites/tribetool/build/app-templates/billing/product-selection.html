@@ -1,0 +1,17 @@
+<div id="product-selection">
+    <ul class="boxlist boxlist-offer">
+        <li ng-class="{selected:product.selected}" ng-repeat="product in products">
+            <div class="boxlist-item-container">
+                <div class="boxlist-header">
+                    <h3>{{product.label}}</h3>
+                </div>
+                <div class="boxlist-body">
+                    <ul>
+                        <li ng-repeat="feature in product.features">{{feature.label}}</li>
+                    </ul>
+                    <button type="button" class="btn" ng-click="chooseProduct(product)" ng-class="{'btn-primary':product.label!='Premium','btn-success':product.label=='Premium'}"><strong>{{product.price}}</strong></button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

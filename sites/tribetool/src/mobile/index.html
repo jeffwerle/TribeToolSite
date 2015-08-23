@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="metaController">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+
+      <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit" async defer></script>
+
+
+      <script src="cordova.js"></script>
+
+      <!-- Note that we include jquery before angular -->
+      <script type="text/javascript" src="vendor/jquery/jquery-1.11.0.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="vendor/ionic/js/ionic.bundle.js"></script>
+
+
+    <script type="text/javascript" src="vendor/ng-cordova/dist/ng-cordova.js"></script>
+
+      <script type="text/javascript" src="vendor/angular/safeApply.js"></script>
+
+      <script type="text/javascript" src="vendor/showdown/ngSanitize.js"></script>
+      <script type="text/javascript" src="vendor/ocLazyLoad/ocLazyLoad.min.js"></script>
+      <script type="text/javascript" src="vendor/matchmedia/matchmedia-ng.js"></script>
+
+
+
+      <script type="text/javascript" src="vendor/socket.io/socket.io.js"></script>
+      <script type="text/javascript" src="vendor/angular-socket-io/socket.min.js"></script>
+
+
+      <script type="text/javascript" src="vendor/showdown/showdown.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/github.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/prettify.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/table.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/wiki.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/tribetool.js"></script>
+      <script type="text/javascript" src="vendor/showdown/extensions/community.js"></script>
+      <script type="text/javascript" src="vendor/showdown/ng-showdown.js"></script>
+
+
+      <script type="text/javascript" src="vendor/angular-markdown-directive/markdown.js"></script>
+
+      <script type="text/javascript" src="vendor/youtube/youtubeMobile.js"></script>
+      <script type="text/javascript" src="vendor/youtube/youtube.js"></script>
+      <script type="text/javascript" src="vendor/noty/noty.js"></script>
+
+      <script type="text/javascript" src="vendor/allmighty-autocomplete/autocomplete-mobile.js"></script>
+      <script type="text/javascript" src="vendor/allmighty-autocomplete/autocomplete.js"></script>
+      <script type="text/javascript" src="vendor/jcs-auto-validate/jcs-auto-validate.js"></script>
+
+      <script type="text/javascript" src="vendor/jr-crop/jr-crop.js"></script>
+
+      <script type="text/javascript" src="appDirectives.js"></script>
+      <script type="text/javascript" src="appFilters.js"></script>
+      <script type="text/javascript" src="appServices.js"></script>
+      <script type="text/javascript" src="appControllers.js"></script>
+
+
+
+
+      <script type="text/javascript" src="controllers/images/imageControllers.js"></script>
+
+
+      <script type="text/javascript" src="services/validationServices.js"></script>
+      <script type="text/javascript" src="services/accounts/sessionServices.js"></script>
+      <script type="text/javascript" src="services/accounts/accountServices.js"></script>
+      <script type="text/javascript" src="services/community/communityServices.js"></script>
+      <script type="text/javascript" src="services/comments/commentServices.js"></script>
+      <script type="text/javascript" src="services/statuses/statusServices.js"></script>
+      <script type="text/javascript" src="services/stream/streamServices.js"></script>
+      <script type="text/javascript" src="services/cookiesServices.js"></script>
+      <script type="text/javascript" src="services/socketServices.js"></script>
+      <script type="text/javascript" src="services/metaServices.js"></script>
+      <script type="text/javascript" src="services/headerServices.js"></script>
+      <script type="text/javascript" src="services/mediaServices.js"></script>
+      <script type="text/javascript" src="services/modalServices.js"></script>
+      <script type="text/javascript" src="services/routeServices.js"></script>
+      <script type="text/javascript" src="services/navigationServices.js"></script>
+      <script type="text/javascript" src="services/breadcrumbServices.js"></script>
+
+      <script type="text/javascript" src="services/posts/postServices.js"></script>
+      <script type="text/javascript" src="services/polls/pollServices.js"></script>
+      <script type="text/javascript" src="services/profile/profileServices.js"></script>
+      <script type="text/javascript" src="services/friends/friendServices.js"></script>
+      <script type="text/javascript" src="services/images/imageServices.js"></script>
+      <script type="text/javascript" src="services/albums/albumServices.js"></script>
+      <script type="text/javascript" src="services/formatting/formattingServices.js"></script>
+      <script type="text/javascript" src="services/messages/messageServices.js"></script>
+
+      <script type="text/javascript" src="services/maps/mapServices.js"></script>
+      <script type="text/javascript" src="services/maps/mapTourServices.js"></script>
+
+      <script type="text/javascript" src="services/tagPages/tagPageServices.js"></script>
+      <script type="text/javascript" src="services/tagPages/tagServices.js"></script>
+      <script type="text/javascript" src="services/wiki/wikiPageServices.js"></script>
+      <script type="text/javascript" src="services/notifications/notificationServices.js"></script>
+      <script type="text/javascript" src="services/notifications/mobileNotificationServices.js"></script>
+      <script type="text/javascript" src="services/toolbar/toolbarServices.js"></script>
+      <script type="text/javascript" src="services/playlists/playlistServices.js"></script>
+      <script type="text/javascript" src="services/uiServices.js"></script>
+      <script type="text/javascript" src="services/votes/voteServices.js"></script>
+      <script type="text/javascript" src="services/videos/videoServices.js"></script>
+      <script type="text/javascript" src="services/lightbox/lightboxServices.js"></script>
+      <script type="text/javascript" src="services/share/shareServices.js"></script>
+      <script type="text/javascript" src="services/share/mobileShareServices.js"></script>
+
+      <script type="text/javascript" src="services/search/searchServices.js"></script>
+
+      <script type="text/javascript" src="services/marketing/marketingServices.js"></script>
+      <script type="text/javascript" src="services/autocompleteServices.js"></script>
+
+      <script type="text/javascript" src="services/ionicHelperServices.js"></script>
+      <script type="text/javascript" src="services/ionicLoadingServices.js"></script>
+      <script type="text/javascript" src="services/achievements/achievementServices.js"></script>
+
+      <script type="text/javascript" src="services/accounts/mobileAccountServices.js"></script>
+      <script type="text/javascript" src="services/compatibility/compatibilityServices.js"></script>
+
+
+
+
+      <script type="text/javascript" src="directiveServices/posts/postDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/formatting/formattingDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/comments/commentDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/polls/pollDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/images/imageDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/stream/streamDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/statuses/statusDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/profile/profileDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/notifications/notificationsDirectiveServices.js"></script>
+      <script type="text/javascript" src="directiveServices/accounts/accountDirectiveServices.js"></script>
+
+
+      <script type="text/javascript" src="controllers/headerControllers.js"></script>
+      <script type="text/javascript" src="controllers/footerControllers.js"></script>
+      <script type="text/javascript" src="controllers/sideMenuControllers.js"></script>
+      <script type="text/javascript" src="controllers/metaControllers.js"></script>
+      <script type="text/javascript" src="controllers/navigationController.js"></script>
+      <script type="text/javascript" src="controllers/community/communityControllers.js"></script>
+      <script type="text/javascript" src="controllers/notifications/notificationControllers.js"></script>
+      <script type="text/javascript" src="controllers/accounts/loginControllers.js"></script>
+      <script type="text/javascript" src="controllers/accounts/registerControllers.js"></script>
+    <script type="text/javascript" src="controllers/accounts/accountListControllers.js"></script>
+
+
+      <script type="text/javascript" src="directives/footerDirectives.js"></script>
+      <script type="text/javascript" src="directives/homeDirectives.js"></script>
+      <script type="text/javascript" src="directives/homeDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/community/communityDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/community/communityDirectives.js"></script>
+      <script type="text/javascript" src="directives/posts/postDirectives.js"></script>
+      <script type="text/javascript" src="directives/posts/postDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/emotions/emotionDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/emotions/emotionDirectives.js"></script>
+      <script type="text/javascript" src="directives/votes/voteDirectives.js"></script>
+      <script type="text/javascript" src="directives/polls/pollDirectives.js"></script>
+      <script type="text/javascript" src="directives/posts/submitPostDirectives.js"></script>
+      <script type="text/javascript" src="directives/images/imageDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/images/imageDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/accounts/accountDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/comments/commentDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/comments/commentDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/profile/profileDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/profile/profileDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/videos/videoDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/videos/videoDirectives.js"></script>
+      <script type="text/javascript" src="directives/toolbar/toolbarDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/toolbar/toolbarDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/formatting/formattingDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/formatting/formattingDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/uiDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/breadcrumbDirectives.js"></script>
+      <script type="text/javascript" src="directives/autocompleteDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/autocompleteDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/stream/streamDirectives.js"></script>
+      <script type="text/javascript" src="directives/statuses/statusDirectives.js"></script>
+      <script type="text/javascript" src="directives/share/shareDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/notifications/notificationDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/notifications/notificationDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/search/searchDirectives.js"></script>
+
+      <script type="text/javascript" src="directives/registerDirectivesShared.js"></script>
+      <script type="text/javascript" src="directives/registerDirectives.js"></script>
+
+
+      <script type="text/javascript" src="app.js"></script>
+
+
+      <link rel="stylesheet" href="styles/app.min.css"/>
+  </head>
+
+
+<!--
+  <body>
+
+      <div id="header" ng-include="'app-templates/tabs.html'"></div>
+
+      <ion-nav-bar class="bar-stable">
+          <ion-nav-back-button>
+          </ion-nav-back-button>
+      </ion-nav-bar>
+
+      <ion-nav-view></ion-nav-view>
+
+  </body>
+  -->
+  <body ng-controller="appController">
+      <div ng-controller="navigationController">
+          <div ng-controller="communityController">
+              <div id="fb-root"></div>
+              <div ng-init="debugInitialized(true)"></div>
+
+              <index-content></index-content>
+
+          </div>
+      </div>
+  </body>
+
+
+</html>
+

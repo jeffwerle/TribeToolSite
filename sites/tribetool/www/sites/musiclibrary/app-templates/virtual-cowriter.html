@@ -1,0 +1,221 @@
+<div>
+    <div class="col-md-2 vc-sidebar">
+
+        <nav class="navbar navbar-inverse" role="navigation" style="color: white; margin-bottom: 0px;">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" ng-click="isSidebarCollapsed = !isSidebarCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" collapse="isSidebarCollapsed">
+
+                <ul class="vc-sidebar-navbar nav navbar-nav nav-stacked">
+                    <li><dmusiclibrary-edit-instrument-dropdown blue-button="true"></dmusiclibrary-edit-instrument-dropdown></li>
+
+                    <!--
+                    <li style="margin-top: 20px; clear: both;">
+                        <h4>Scale Tools</h4>
+                        <ul style="list-style: none;">
+                            <li><a href="/scale-information" class="white pointer"> Fretboard</a></li>
+                            <li><a href="/scale-dictionary" class="white pointer"> Scale List</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin-top: 20px;">
+                        <h4>Chord Tools</h4>
+                        <ul style="list-style: none;">
+                            <li><a href="/chord-namer" class="white pointer"> Chord Namer</a></li>
+                            <li><a href="/chord-dictionary" class="white pointer"> Chord List</a></li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div class="col-md-10">
+        <form class="input-group" ng-submit="search()">
+            <input type="text" class="form-control" placeholder="Search" ng-model="command" id="search_bar" name="search_bar" value="">
+            <div class="input-group-btn">
+                <button type="submit" class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+        </form>
+
+        <div ng-show="processing">
+            <loading></loading>
+        </div>
+
+        <div ng-if="!processing">
+
+            <div ng-if="error" class="text-center">
+                <h1 style="color: red;">Oh no! Something went wrong! :(</h1>
+                <div class=" col-md-offset-4 col-md-4">
+                    <div class="small-panel">
+                        <div>{{error}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="noResults" class="text-center">
+                <h1>We couldn't quite understand :(</h1>
+                <div class=" col-md-offset-4 col-md-4">
+                    <div class="small-panel">
+                        <div style="color: red;">We couldn't understand "{{originalCommand}}". Please take a look at <a href="/examples">some example searches!</a></div>
+                        <h3 style="margin-top: 20px;">Example Searches</h3>
+                        <div><a ng-click="goToVirtualCowriter('Am7')">Am7</a></div>
+                        <div><a ng-click="goToVirtualCowriter('D Melodic Minor')">D Melodic Minor</a></div>
+                        <div><a ng-click="goToVirtualCowriter('(3x543x) Scale')">(3x543x) Scale</a></div>
+                        <div><a ng-click="goToVirtualCowriter('F7 Chord Charts')">F7 Chord Charts</a></div>
+                        <div><a ng-click="goToVirtualCowriter('B7, E7, Amaj Chord Progression')">B7, E7, Amaj Chord Progression</a></div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="unknownElements && unknownElements.length > 0" class="text-center">
+                <h1>We couldn't quite understand :(</h1>
+                <div ng-repeat="unknownElement in unknownElements">
+                    <div class="col-md-4">
+                        <div class="small-panel">
+                            <div style="color: red;">{{unknownElement.error}}</div>
+                            <div ng-if="unknownElement.element.IsTab">
+                                <div style="margin-top: 20px;">Consider changing your current instrument.</div>
+                                <div>
+                                    <dmusiclibrary-edit-instrument-dropdown blue-button="true"></dmusiclibrary-edit-instrument-dropdown>
+                                </div>
+                                <div style="margin-top: 60px;">
+                                    <div>Search again!</div>
+                                    <button ng-click="search()" class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="categories && categories.length > 0">
+                <div dmusiclibrary-question-answer-wizard all-qa="allQa" q-index="qIndex" show-buttons="false" speed="300"></div>
+            </div>
+
+
+            <div ng-if="chordProgression" class="text-center">
+
+                <div class="small-panel col-md-3">
+                    <h3 style="font-weight: bolder;">Chord Progression</h3>
+                    <dmusiclibrary-chord-progression-basic-info chord-progression="chordProgression"></dmusiclibrary-chord-progression-basic-info>
+                    <dmusiclibrary-chord-progression-scales-of-best-fit ng-if="chordProgression.ScalesOfBestFit" chord-progression="chord-progression" scales-of-best-fit="chordProgression.ScalesOfBestFit"></dmusiclibrary-chord-progression-scales-of-best-fit>
+                </div>
+                <div class="col-md-9">
+                    <dmusiclibrary-vc-fretboard></dmusiclibrary-vc-fretboard>
+
+                    <div ng-repeat="chord in chordProgression.Chords">
+                        <div class="col-md-4">
+                            <div class="small-panel">
+                                <dmusiclibrary-chord-or-tab-chord-panel chord-or-tab-chord="chord"></dmusiclibrary-chord-or-tab-chord-panel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="tab">
+                <div class="small-panel col-md-3">
+                    <dmusiclibrary-tab-basic-info tab-chord="tab"></dmusiclibrary-tab-basic-info>
+                    <dmusiclibrary-chord-staff-area chord="tab.Chord"></dmusiclibrary-chord-staff-area>
+                    <dmusiclibrary-chord-inversions-area chord="tab.Chord"></dmusiclibrary-chord-inversions-area>
+
+                </div>
+                <div class="col-md-9">
+                    <dmusiclibrary-vc-fretboard tab-chord="tab"></dmusiclibrary-vc-fretboard>
+                    <div ng-show="!tab.Chord.ChordCharts"><loading></loading> Loading {{tab.Chord.TitleChordName.FullName}} Chord Charts...</div>
+                    <div class="col-md-12">
+                        <dmusiclibrary-chord-charts suppress-showing-first-chart-on-fretboard="true" display-charts-in-row="false" ng-if="tab.Chord.ChordCharts" chord="tab.Chord" chord-charts="tab.Chord.ChordCharts"></dmusiclibrary-chord-charts>
+                    </div>
+                </div>
+            </div>
+
+
+            <div ng-if="chord">
+                <div class="small-panel col-md-3">
+                    <dmusiclibrary-chord-basic-info chord="chord"></dmusiclibrary-chord-basic-info>
+                    <dmusiclibrary-chord-staff-area chord="chord"></dmusiclibrary-chord-staff-area>
+                    <dmusiclibrary-chord-inversions-area chord="chord"></dmusiclibrary-chord-inversions-area>
+
+                </div>
+                <div class="col-md-9">
+                    <dmusiclibrary-vc-fretboard></dmusiclibrary-vc-fretboard>
+                    <div>
+                        <div ng-show="!chord.ChordCharts"><loading></loading> Loading {{chord.TitleChordName.FullName}} Chord Charts...</div>
+                        <div class="col-md-12">
+                            <dmusiclibrary-chord-charts display-charts-in-row="false" ng-if="chord.ChordCharts" chord="chord" chord-charts="chord.ChordCharts"></dmusiclibrary-chord-charts>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="scale">
+                <div class="col-md-3">
+                    <div class="small-panel">
+                        <dmusiclibrary-scale-basic-info command-element="commandElement" scale="scale"></dmusiclibrary-scale-basic-info>
+                        <dmusiclibrary-vc-scale-chart ng-if="scale.ScaleChartResult && scale.ScaleChartResult.ScaleChart" scale="scale" scale-chart-result="scale.ScaleChartResult"></dmusiclibrary-vc-scale-chart>
+                    </div>
+
+                    <div ng-if="scale.HarmonizedChords.ThreeNoteChords || scale.HarmonizedChords.ThreeNoteBorrowedChords" class="small-panel">
+                        <dmusiclibrary-harmonized-chords ng-if="scale.HarmonizedChords.ThreeNoteChords" scale="scale" harmonized-chords="scale.HarmonizedChords.ThreeNoteChords"></dmusiclibrary-harmonized-chords>
+                        <dmusiclibrary-harmonized-chords ng-if="scale.HarmonizedChords.ThreeNoteBorrowedChords" scale="scale" harmonized-chords="scale.HarmonizedChords.ThreeNoteBorrowedChords"></dmusiclibrary-harmonized-chords>
+                    </div>
+                    <div ng-show="!scale.HarmonizedChords.ThreeNoteChords && !scale.HarmonizedChords.ThreeNoteBorrowedChords"><loading></loading> Loading 3-Note Harmonized Chords...</div>
+
+
+
+                </div>
+                <div class="col-md-9">
+                    <dmusiclibrary-vc-fretboard></dmusiclibrary-vc-fretboard>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="small-panel">
+                                <div ng-show="!scale.Staff"><loading></loading> Loading Notation...</div>
+                                <dmusiclibrary-scale-staff ng-if="scale.Staff" scale="scale" staff="scale.Staff"></dmusiclibrary-scale-staff>
+                            </div>
+                        </div>
+                        <div class="col-md-6 small-panel">
+                            <div class="small-panel">
+                                <div ng-show="!scale.ScaleChartResult"><loading></loading> Loading Tablature...</div>
+                                <dmusiclibrary-scale-tab-staff ng-if="scale.ScaleChartResult" scale="scale" scale-chart-result="scale.ScaleChartResult"></dmusiclibrary-scale-tab-staff>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-if="scale.HarmonizedChords.FourNoteChords || scale.HarmonizedChords.FourNoteBorrowedChords" class="col-md-4">
+                        <div class="small-panel">
+                            <dmusiclibrary-harmonized-chords ng-if="scale.HarmonizedChords.FourNoteChords" scale="scale" harmonized-chords="scale.HarmonizedChords.FourNoteChords"></dmusiclibrary-harmonized-chords>
+                            <dmusiclibrary-harmonized-chords ng-if="scale.HarmonizedChords.FourNoteBorrowedChords" scale="scale" harmonized-chords="scale.HarmonizedChords.FourNoteBorrowedChords"></dmusiclibrary-harmonized-chords>
+                        </div>
+                    </div>
+
+                    <div ng-if="scale.RelativeModes || scale.ParallelModes" class="col-md-4">
+                        <div class="small-panel text-center">
+                            <div ng-if="scale.RelativeModes">
+                                <h3>Relative Modes</h3>
+                                <dmusiclibrary-scale-modes scale="scale" modes="scale.RelativeModes"></dmusiclibrary-scale-modes>
+                            </div>
+                            <div ng-if="scale.ParallelModes">
+                                <h3>Parallel Modes</h3>
+                                <dmusiclibrary-scale-modes scale="scale" modes="scale.ParallelModes"></dmusiclibrary-scale-modes>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="!scale.RelativeModes && !scale.ParallelModes"><loading></loading> Loading Modes...</div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

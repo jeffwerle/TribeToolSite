@@ -1,0 +1,7 @@
+<div ng-controller="cthemouselandingCommunityController">
+    <div ng-if="!isLoggedIn">
+        <cthemouselanding-landing-page></cthemouselanding-landing-page>
+    </div>
+
+    <community-page hide-banner="!isLoggedIn"></community-page>
+</div>

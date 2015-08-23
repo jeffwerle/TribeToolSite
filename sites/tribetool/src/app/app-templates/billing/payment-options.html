@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Your Payment Methods</h2>
+                </div>
+                <div class="panel-body" ng-if="account.BillingProfile.PaymentInstruments.length > 0">
+                    <form class="form form-horizontal" name="selectPaymentInstrumentForm">
+                        <div ng-repeat="instrument in account.BillingProfile.PaymentInstruments">
+                            <label ng-if="instrument.paymentInstrumentType == 1" class="clearfix">
+                                <input class="pull-left" type="radio" name="payment" ng-model="payment.paymentInstrumentId" ng-value="instrument.paymentInstrumentId" />
+                                <img class="pull-left credit-card" payment-card="{{instrument.cardBrand}}">
+                                <span class="pull-left text-muted">{{instrument.cardBrand}} ending in {{instrument.cardMask}}</span>
+                                <span class="pull-right text-muted">{{instrument.label}}</span>
+                            </label>
+                            <label ng-if="instrument.paymentInstrumentType == 2" class="clearfix">
+                                <input class="pull-left" type="radio" name="payment" ng-model="payment.paymentInstrumentId" ng-value="instrument.paymentInstrumentId" />
+                                <span class="pull-left text-muted">Account ending in {{instrument.bankMask}}</span>
+                                <span class="pull-right text-muted">{{instrument.label}}</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-body" ng-if="account.BillingProfile.PaymentInstruments.length == 0">
+                    <p class="text-danger text-center"><strong>You have no registered payment methods.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section ng-if="account.accountType != null">
+            <h2>Add A Payment Card</h2>
+
+
+            <div class="col-md-9">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Name</div>
+                    <div class="panel-body">
+
+                        <form name="stripeForm" ng-submit="checkout()">
+
+                            <div class="form-group" ng-class="{'has-error': stripeForm.card.$invalid}">
+                                <label>Card Number <span class="required-star">*</span></label>
+                                <input type="text" size="20" payments-validate="card" payments-type-model="type" required="true" placeholder="Card Number" class="form-control" name="card" ng-model="cardNumber" />
+                            </div>
+
+                            <div class="form-group" ng-class="{'has-error': stripeForm.cvc.$invalid}">
+                                <label>CVC <span class="required-star">*</span></label>
+                                <input id="cvc" type="text" size="4" name="cvc" payments-validate="cvc" required="true" placeholder="CVC" class="form-control" ng-model="cvc"/>
+                            </div>
+
+
+                            <label>Expiration<span class="required-star">*</span></label>
+                            <div ng-class="{'has-error': stripeForm.expiry.$invalid}">
+                                <div class="col-md-3">
+                                    <div class="btn-group" dropdown is-open="dropdowns.month.isOpen">
+                                        <select ng-model="paymentCard.exp_month" class="form-control" required>
+                                            <option ng-repeat="month in meta.months">{{month.label}}</option>
+                                        </select>
+
+                                        <input type="hidden" ng-model="paymentCard.exp_month" value="{{paymentCard.exp_month}}" data-stripe="exp-month" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="btn-group" dropdown is-open="dropdowns.year.isOpen">
+                                        <select ng-model="paymentCard.exp_year" class="form-control" required>
+                                            <option ng-repeat="year in meta.years">{{year.label}}</option>
+                                        </select>
+                                        <input type="hidden" ng-model="paymentCard.exp_year" value="{{paymentCard.exp_year}}" data-stripe="exp-year" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button style="margin-top: 20px;" ng-disabled="submitting.card || stripeForm.$invalid" type="button" class="btn btn-warning pull-right" ng-click="addCard(paymentCard)">Add Card</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <div class="col-md-4">
+        <span ng-if="payment.paymentInstrumentId == null" tooltip="You must select a payment method to continue.">
+            <button class="btn btn-lg btn-block btn-success" disabled>Continue</button>
+        </span>
+        <button ng-if="payment.paymentInstrumentId != null" ng-click="choosePaymentMethod(payment)" class="btn btn-lg btn-block btn-success">Continue</button>
+    </div>
+
+</div>

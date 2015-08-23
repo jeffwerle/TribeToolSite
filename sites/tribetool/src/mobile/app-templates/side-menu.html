@@ -1,0 +1,16 @@
+<ion-side-menu side="left" ng-controller="sideMenuController">
+    <header class="bar bar-header bar-royal">
+        <div class="title"><comment-picture class="" ng-if="communityService.community && accountService.account" account="accountService.account" show-only-picture="true" hide-compatibility="true" suppress-progress="true"></comment-picture> {{accountService.account | profileName}}</div>
+    </header>
+    <ion-content class="has-header" animation="slide-left-right">
+        <ul class="list">
+            <a class="item" ng-click="toggleMenu()" ng-href="#/community/{{communityService.community.Url}}"><i class="icon fa fa-users"></i> Community</a>
+            <a class="item" ng-click="toggleMenu()" ng-href="#/stream/{{communityService.community.Url}}"><i class="icon fa fa-newspaper-o"></i> Stream</a>
+            <a class="item" ng-click="toggleMenu()" ng-href="#/profile/{{communityService.community.Url}}/{{accountService.account.Username}}"><i class="transform icon fa fa-user"></i> Profile</a>
+            <div class="item item-divider">
+                Account Options
+            </div>
+            <a class="item pointer" ng-click="logout()"><i class="icon fa fa-sign-out"></i> Logout</a>
+        </ul>
+    </ion-content>
+</ion-side-menu>

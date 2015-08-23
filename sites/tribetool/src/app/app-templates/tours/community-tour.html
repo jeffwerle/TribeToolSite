@@ -1,0 +1,15 @@
+<div>
+    <div ng-controller="communityTourController">
+        <div class="container-narrow"
+             ng-intro-options="communityIntroOptions" ng-intro-method="startCommunityTour"
+             ng-intro-oncomplete="communityCompletedEvent" ng-intro-onexit="communityExitEvent"
+             ng-intro-autostart="false">
+        </div>
+
+        <div class="container-narrow"
+             ng-intro-options="videoIntroOptions" ng-intro-method="startVideoTour"
+             ng-intro-oncomplete="videoCompletedEvent" ng-intro-onexit="videoExitEvent"
+             ng-intro-autostart="false">
+        </div>
+    </div>
+</div>

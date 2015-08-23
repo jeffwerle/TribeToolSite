@@ -1,0 +1,75 @@
+
+.all-qa-container {
+  float:left;
+  width: 100%;
+}
+.question-container {
+  background:white;
+  width: 90%;
+  margin: 20px 5%;
+  height: 250px; /* Will be a default - the question-answer-wizard will take care of it */
+}
+
+.question-animated-container {
+  overflow: hidden;
+}
+
+.question-text {
+  margin-top:6px;
+}
+
+.answer-text {
+  border-radius: 25px;
+  background: lightgray;
+  float:left;
+  margin:1.5%;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.answer-text.selected {
+  background: green;
+}
+
+.answers.num-1 .answer-text {
+  width: 97%;
+}
+
+.answers.num-2 .answer-text {
+  width: 47%;
+}
+
+.answers.num-3 .answer-text {
+  width: 47%;
+}
+
+.answers.num-3 .answer-text.num-3 {
+  width: 47%;
+  margin-left: 23.5%;
+}
+
+.answers.num-4 .answer-text {
+  width: 47%;
+}
+
+.question-text {
+  text-align: center;
+  font-weight: 700;
+}
+
+.button-container {
+  width:100%;
+}
+
+
+body.has-question-answer-wizard {
+  overflow-x: hidden;
+}
+[question-answer-wizard] .next-button {
+  margin-left: 5px;
+}
+
+[question-answer-wizard] .prev-button {
+  margin-right: 5px;
+}

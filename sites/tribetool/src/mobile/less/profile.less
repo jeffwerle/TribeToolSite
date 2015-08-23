@@ -1,0 +1,35 @@
+@commentProfilePictureHeight: 30px;
+@commentProfilePictureRightPadding: 5px;
+.card .item .comment-profile-picture-container {
+  // clear ionic's use of white-space: nowrap for .item
+  white-space: normal;
+  //float: left;
+  //margin-right: 10px;
+  padding-right: @commentProfilePictureRightPadding;
+
+  &.progress-radial {
+    width: @commentProfilePictureHeight + 7;
+    height: @commentProfilePictureHeight + 7;
+    padding-top: 3px;
+    border-radius: 10%;
+
+    .profile-picture-level-progress {
+      width: @commentProfilePictureHeight;
+
+      .profile-picture-level {
+        font-size: 6px;
+      }
+    }
+  }
+
+  .profile-picture-level-progress {
+    padding-right: @commentProfilePictureRightPadding;
+  }
+
+  .comment-profile-picture {
+
+    height: @commentProfilePictureHeight;
+    width: @commentProfilePictureHeight;
+
+  }
+}
